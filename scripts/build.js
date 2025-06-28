@@ -27,6 +27,23 @@ fs.copyFileSync(
     path.join(distDir, 'index.html')
 );
 
+// Copy 404.html if it exists
+const notFoundPath = path.join(__dirname, '..', '404.html');
+if (fs.existsSync(notFoundPath)) {
+    fs.copyFileSync(notFoundPath, path.join(distDir, '404.html'));
+}
+
+// Copy robots.txt and sitemap.xml if they exist
+const robotsPath = path.join(__dirname, '..', 'robots.txt');
+if (fs.existsSync(robotsPath)) {
+    fs.copyFileSync(robotsPath, path.join(distDir, 'robots.txt'));
+}
+
+const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
+if (fs.existsSync(sitemapPath)) {
+    fs.copyFileSync(sitemapPath, path.join(distDir, 'sitemap.xml'));
+}
+
 // Copy section index.html files (excluding hospitals which will be generated)
 const sectionDirs = ['columns', 'faq', 'contact'];
 sectionDirs.forEach(dir => {
@@ -59,6 +76,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     <link rel="stylesheet" href="/css/luxury-style.css">
     ${mdPath.includes('glossary.md') ? '<link rel="stylesheet" href="/css/glossary.css">' : ''}
     ${mdPath.includes('consultation.md') ? '<link rel="stylesheet" href="/css/consultation.css">' : ''}
+    <link rel="canonical" href="https://all-on-4.vercel.app${outputPath.replace(distDir, '').replace('.html', '/').replace('/index/', '/')}">
     
     <!-- Structured Data -->
     <script type="application/ld+json">

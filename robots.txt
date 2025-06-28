@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /videos/
+
+Sitemap: https://all-on-4.vercel.app/sitemap.xml
