@@ -356,6 +356,12 @@ footer {
     color: #999;
 }
 
+.footer-message {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
 /* Image Optimization Styles */
 img {
     display: block;
