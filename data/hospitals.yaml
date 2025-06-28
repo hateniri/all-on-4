@@ -2,134 +2,210 @@
 # 各医院の情報を構造化して管理
 
 hospitals:
+  # 北海道
+  - id: hokkaido_kimura_01
+    name: 医療法人社団 きむら歯科 マロ・デンタル札幌
+    region: 北海道
+    address: 北海道札幌市中央区
+    website: https://www.kimura-dental-mio.info/
+    image: /images/hospitals/hokkaido_kimura_01.jpg
+    description: |
+      札幌市中央区に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  # 宮城県
+  - id: miyagi_whitebright_01
+    name: ホワイトブライトデンタルオフィス
+    region: 宮城県
+    address: 宮城県仙台市青葉区
+    website: https://www.whitebright-do.com/
+    image: /images/hospitals/miyagi_whitebright_01.jpg
+    description: |
+      仙台市青葉区に位置するデンタルクリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  # 福島県
+  - id: fukushima_higuchi_01
+    name: 医療法人ひぐち歯科医院
+    region: 福島県
+    address: 福島県福島市
+    website: https://fukushima-higuchidc.jp/
+    image: /images/hospitals/fukushima_higuchi_01.jpg
+    description: |
+      福島市に位置する歯科医院。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  # 埼玉県
+  - id: saitama_orc_01
+    name: ORCインプラントクリニック（朝霞）
+    region: 埼玉県
+    address: 埼玉県朝霞市
+    website: https://orc-implant.jp/
+    image: /images/hospitals/saitama_orc_01.jpg
+    description: |
+      朝霞市に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  # 千葉県
+  - id: chiba_sophia_01
+    name: ソフィア歯科クリニック
+    region: 千葉県
+    address: 千葉県浦安市
+    website: https://www.sophia-shika.com/
+    image: /images/hospitals/chiba_sophia_01.jpg
+    description: |
+      浦安市に位置する歯科クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
   # 東京都
-  - id: tokyo_implant01
-    name: 東京プレミアムインプラント
+  - id: tokyo_maro_01
+    name: All-on-4研究所 マロ デンタル&メディカル東京
     region: 東京都
-    address: 東京都港区南青山2-11-1
-    website: https://tokyo-premium-implant.jp
-    image: /images/hospitals/tokyo_implant01.jpg
+    address: 東京都中央区（銀座）
+    website: https://www.malodental-tokyo.com/
+    image: /images/hospitals/tokyo_maro_01.jpg
     description: |
-      南青山に位置するインプラント治療クリニック。
+      銀座に位置するインプラント治療研究所。
       詳細な治療内容については、直接医院にお問い合わせください。
 
-  - id: tokyo_implant02
-    name: 銀座オーラルクリニック
+  - id: tokyo_odc_01
+    name: 医療法人ODC All-on-4クリニック（銀座）
     region: 東京都
-    address: 東京都中央区銀座4-3-9
-    website: https://ginza-oral.com
-    image: /images/hospitals/tokyo_implant02.jpg
+    address: 東京都中央区（銀座）
+    website: https://www.odc-all-on-4.com/
+    image: /images/hospitals/tokyo_odc_01.jpg
     description: |
-      銀座に位置する歯科クリニック。
+      銀座に位置するAll-on-4専門クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
-  - id: tokyo_implant04
-    name: All-on-4 Clinic 銀座
+  - id: tokyo_orc_01
+    name: ORCインプラントクリニック東京（板橋）
     region: 東京都
-    address: 東京都中央区銀座6-9-6
-    website: https://allon4-clinic-ginza.jp
-    image: /images/hospitals/tokyo_implant04.jpg
+    address: 東京都板橋区
+    website: https://orc-implant.jp/
+    image: /images/hospitals/tokyo_orc_01.jpg
     description: |
-      銀座に位置するインプラント治療クリニック。
+      板橋区に位置するインプラント治療クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
-  - id: tokyo_implant03
-    name: 新宿インプラントセンター
+  - id: tokyo_orc_02
+    name: ORCインプラントクリニック渋谷
     region: 東京都
-    address: 東京都新宿区西新宿1-18-5
-    website: https://shinjuku-implant.jp
-    image: /images/hospitals/tokyo_implant03.jpg
+    address: 東京都渋谷区
+    website: https://orc-implant.jp/
+    image: /images/hospitals/tokyo_orc_02.jpg
     description: |
-      新宿に位置するインプラント治療センター。
+      渋谷区に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  - id: tokyo_asagaya_01
+    name: 阿佐谷北歯科クリニック
+    region: 東京都
+    address: 東京都杉並区
+    website: https://www.perfect-all-on-4.com/
+    image: /images/hospitals/tokyo_asagaya_01.jpg
+    description: |
+      杉並区に位置する歯科クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  - id: tokyo_riverside_01
+    name: リバーサイド歯科クリニック
+    region: 東京都
+    address: 東京都江戸川区
+    website: https://www.perfect-all-on-4.com/
+    image: /images/hospitals/tokyo_riverside_01.jpg
+    description: |
+      江戸川区に位置する歯科クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
   # 神奈川県
-  - id: kanagawa_implant01
-    name: 横浜みなとインプラント
+  - id: kanagawa_orc_01
+    name: ORCインプラントクリニック大磯
     region: 神奈川県
-    address: 神奈川県横浜市西区みなとみらい3-5-1
-    website: https://yokohama-minato-implant.jp
-    image: /images/hospitals/kanagawa_implant01.jpg
+    address: 神奈川県中郡大磯町
+    website: https://orc-implant.jp/
+    image: /images/hospitals/kanagawa_orc_01.jpg
     description: |
-      横浜みなとみらいに位置するインプラント治療クリニック。
+      中郡大磯町に位置するインプラント治療クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
-  - id: kanagawa_implant02
-    name: 湘南デンタルクリニック
+  - id: kanagawa_orchid_01
+    name: オーキッド歯科クリニック 綱島医院
     region: 神奈川県
-    address: 神奈川県藤沢市南藤沢21-1
-    website: https://shonan-dental.jp
-    image: /images/hospitals/kanagawa_implant02.jpg
+    address: 神奈川県横浜市港北区
+    website: https://www.odc-2.com/
+    image: /images/hospitals/kanagawa_orchid_01.jpg
     description: |
-      藤沢に位置する歯科クリニック。
+      横浜市港北区に位置する歯科クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
-  # 大阪府
-  - id: osaka_implant01
-    name: 大阪梅田インプラントセンター
-    region: 大阪府
-    address: 大阪府大阪市北区梅田1-11-4
-    website: https://osaka-umeda-implant.jp
-    image: /images/hospitals/osaka_implant01.jpg
+  # 静岡県
+  - id: shizuoka_takahara_01
+    name: 高原歯科医院（ORC提携）
+    region: 静岡県
+    address: 静岡県伊東市
+    website: https://orc-implant.jp/
+    image: /images/hospitals/shizuoka_takahara_01.jpg
     description: |
-      大阪梅田に位置するインプラント治療センター。
-      詳細な治療内容については、直接医院にお問い合わせください。
-
-  - id: osaka_implant02
-    name: なんばオーラルケアクリニック
-    region: 大阪府
-    address: 大阪府大阪市中央区難波4-7-2
-    website: https://namba-oral.jp
-    image: /images/hospitals/osaka_implant02.jpg
-    description: |
-      難波に位置する歯科クリニック。
+      伊東市に位置する歯科医院。
       詳細な治療内容については、直接医院にお問い合わせください。
 
   # 愛知県
-  - id: aichi_implant01
-    name: 名古屋セントラルインプラント
+  - id: aichi_nanatsuboshi_01
+    name: ななつ星デンタルクリニック
     region: 愛知県
-    address: 愛知県名古屋市中村区名駅3-28-12
-    website: https://nagoya-central-implant.jp
-    image: /images/hospitals/aichi_implant01.jpg
+    address: 愛知県名古屋市緑区
+    website: https://nanatsuboshi-dc.jp/
+    image: /images/hospitals/aichi_nanatsuboshi_01.jpg
     description: |
-      名古屋駅近くに位置するインプラント治療クリニック。
+      名古屋市緑区に位置するデンタルクリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  # 大阪府
+  - id: osaka_tsutsui_01
+    name: 大阪つつい歯科・矯正歯科
+    region: 大阪府
+    address: 大阪府大阪市北区
+    website: https://festival-shika.jp/lp-allon4/
+    image: /images/hospitals/osaka_tsutsui_01.jpg
+    description: |
+      大阪市北区に位置する歯科・矯正歯科クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
+  - id: osaka_freesia_01
+    name: フリージア歯科クリニック（オリックス本町ビル院）
+    region: 大阪府
+    address: 大阪府大阪市西区
+    website: https://www.freesia-dc.com/
+    image: /images/hospitals/osaka_freesia_01.jpg
+    description: |
+      大阪市西区に位置する歯科クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
   # 福岡県
-  - id: fukuoka_implant01
-    name: 博多インプラントクリニック
+  - id: fukuoka_ootawa_01
+    name: 医療法人おおたわ歯科医院 (ALLON4 ZYGOMA CLINIC)
     region: 福岡県
-    address: 福岡県福岡市博多区博多駅前2-5-1
-    website: https://hakata-implant.jp
-    image: /images/hospitals/fukuoka_implant01.jpg
+    address: 福岡県福岡市南区
+    website: https://www.allon4zygoma.com/
+    image: /images/hospitals/fukuoka_ootawa_01.jpg
     description: |
-      博多駅前に位置するインプラント治療クリニック。
+      福岡市南区に位置する歯科医院。
       詳細な治療内容については、直接医院にお問い合わせください。
 
-  - id: fukuoka_implant02
-    name: 天神デンタルインプラント
-    region: 福岡県
-    address: 福岡県福岡市中央区天神2-14-8
-    website: https://tenjin-dental-implant.jp
-    image: /images/hospitals/fukuoka_implant02.jpg
+  # 沖縄県
+  - id: okinawa_naha_01
+    name: ナハデンタルオフィス
+    region: 沖縄県
+    address: 沖縄県那覇市
+    website: https://nahadentaloffice.com/
+    image: /images/hospitals/okinawa_naha_01.jpg
     description: |
-      天神に位置するインプラント治療クリニック。
-      詳細な治療内容については、直接医院にお問い合わせください。
-
-  # 北海道
-  - id: hokkaido_implant01
-    name: 札幌オールオンフォークリニック
-    region: 北海道
-    address: 北海道札幌市中央区大通西3-6-1
-    website: https://sapporo-allon4.jp
-    image: /images/hospitals/hokkaido_implant01.jpg
-    description: |
-      札幌大通に位置するインプラント治療クリニック。
+      那覇市に位置するデンタルオフィス。
       詳細な治療内容については、直接医院にお問い合わせください。
 
 # データ構造説明
-# id: 一意識別子（地域_implant連番）
+# id: 一意識別子（地域_医院名_連番）
 # name: 医院名
 # region: 都道府県
 # address: 住所
