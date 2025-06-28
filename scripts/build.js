@@ -58,6 +58,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/luxury-style.css">
     ${mdPath.includes('glossary.md') ? '<link rel="stylesheet" href="/css/glossary.css">' : ''}
+    ${mdPath.includes('consultation.md') ? '<link rel="stylesheet" href="/css/consultation.css">' : ''}
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -108,6 +109,20 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
         
         <div class="container">
             <article class="glossary-content">
+                ${htmlContent}
+            </article>
+        </div>
+        ` : mdPath.includes('consultation.md') ? `
+        <!-- Consultation Hero -->
+        <section class="consultation-page-hero">
+            <div class="container">
+                <h1 class="page-title">${data.title || '先輩患者に相談'}</h1>
+                <p class="page-subtitle">オールオン4経験者があなたの不安にお答えします</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <article class="consultation-content">
                 ${htmlContent}
             </article>
         </div>
@@ -203,6 +218,18 @@ if (fs.existsSync(glossaryPath)) {
     }
     const htmlPath = path.join(glossaryDistDir, 'index.html');
     generateHtmlFromMarkdown(glossaryPath, htmlPath);
+}
+
+// Process consultation
+const consultationPath = path.join(__dirname, '..', 'consultation.md');
+const consultationDistDir = path.join(distDir, 'consultation');
+
+if (fs.existsSync(consultationPath)) {
+    if (!fs.existsSync(consultationDistDir)) {
+        fs.mkdirSync(consultationDistDir, { recursive: true });
+    }
+    const htmlPath = path.join(consultationDistDir, 'index.html');
+    generateHtmlFromMarkdown(consultationPath, htmlPath);
 }
 
 // Create hospital pages by region

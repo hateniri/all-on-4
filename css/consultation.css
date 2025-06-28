@@ -1,0 +1,246 @@
+/* Consultation Page Styles */
+.consultation-page-hero {
+    background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.consultation-page-hero .page-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.consultation-page-hero .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.consultation-content {
+    padding: 2rem 0;
+}
+
+.consultation-hero {
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.consultation-hero h2 {
+    font-family: var(--font-serif);
+    color: var(--dark-gold);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.consultation-hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--charcoal);
+}
+
+/* Consultation Cards */
+.consultation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.consultation-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-top: 3px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.consultation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.consultation-card h3 {
+    font-family: var(--font-serif);
+    color: var(--dark-gold);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.consultation-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.consultation-card li {
+    padding: 0.5rem 0;
+    color: var(--charcoal);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.consultation-card li:before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+}
+
+/* Senior Voices */
+.senior-voices {
+    margin: 3rem 0;
+}
+
+.voice-block {
+    background: var(--pearl);
+    padding: 2rem 3rem;
+    border-left: 4px solid var(--gold);
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.voice-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--midnight);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.voice-block cite {
+    display: block;
+    text-align: right;
+    color: var(--charcoal);
+    font-style: normal;
+    font-size: 0.95rem;
+}
+
+/* Consultation Buttons */
+.btn-consultation, .btn-volunteer {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+    color: var(--midnight);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin: 2rem 0;
+}
+
+.btn-consultation:hover, .btn-volunteer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* FAQ Consultation */
+.faq-consultation {
+    margin: 3rem 0;
+}
+
+.faq-consultation details {
+    background: white;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-left: 3px solid var(--gold);
+}
+
+.faq-consultation summary {
+    font-weight: 600;
+    color: var(--dark-gold);
+    cursor: pointer;
+    padding: 0.5rem 0;
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.faq-consultation summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-consultation summary:before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.faq-consultation details[open] summary:before {
+    transform: rotate(90deg);
+}
+
+.faq-consultation p {
+    margin-top: 1rem;
+    line-height: 1.8;
+    color: var(--charcoal);
+}
+
+/* Consultation Notes */
+.consultation-notes {
+    background: var(--champagne);
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.consultation-notes h3 {
+    color: var(--dark-gold);
+    margin-bottom: 1.5rem;
+    font-family: var(--font-serif);
+}
+
+.consultation-notes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.consultation-notes li {
+    padding: 0.5rem 0;
+    color: var(--charcoal);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.consultation-notes li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+}
+
+/* Volunteer Recruit */
+.volunteer-recruit {
+    text-align: center;
+    background: linear-gradient(135deg, var(--pearl), var(--champagne));
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.volunteer-recruit p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--midnight);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .consultation-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .consultation-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .voice-block {
+        padding: 1.5rem 2rem;
+    }
+}
