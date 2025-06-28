@@ -142,6 +142,14 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
             <article class="article-content-luxury">
                 ${htmlContent}
             </article>
+            
+            <!-- 記事下広告 -->
+            <div class="ad-section">
+                <div class="ad-placeholder">
+                    <!-- 広告スペース: 728x90 または レスポンシブ -->
+                    <p>広告スペース</p>
+                </div>
+            </div>
         </div>
         `}
     </main>
@@ -428,6 +436,14 @@ const mainHospitalsHtml = `<!DOCTYPE html>
             <div class="search-info">
                 <p>現在<strong>${hospitalsData.hospitals.length}医院</strong>を掲載中</p>
                 <p>その他の地域の医院情報も随時追加予定です。</p>
+            </div>
+            
+            <!-- 下部広告 -->
+            <div class="ad-section">
+                <div class="ad-placeholder">
+                    <!-- 広告スペース: 728x90 または レスポンシブ -->
+                    <p>広告スペース</p>
+                </div>
             </div>
         </div>
     </main>
