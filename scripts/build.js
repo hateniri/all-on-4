@@ -11,7 +11,7 @@ if (!fs.existsSync(distDir)) {
 }
 
 // Copy static files
-const staticDirs = ['css', 'js', 'data', 'images'];
+const staticDirs = ['css', 'js', 'data', 'images', 'videos'];
 staticDirs.forEach(dir => {
     const srcPath = path.join(__dirname, '..', dir);
     const destPath = path.join(distDir, dir);

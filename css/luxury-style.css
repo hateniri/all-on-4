@@ -348,6 +348,53 @@
     display: none;
 }
 
+/* Radio Video Section */
+.radio-video-section {
+    background: linear-gradient(135deg, var(--pearl) 0%, var(--ivory) 100%);
+    padding: 3rem 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.radio-video-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.radio-video-content {
+    flex: 1;
+}
+
+.radio-video-content h3 {
+    font-size: 1.5rem;
+    color: var(--midnight);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-serif);
+}
+
+.radio-video-content p {
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+.radio-video-player {
+    flex: 0 0 400px;
+    background: var(--midnight);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.radio-video-player video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 250px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .columns-hero, .hospitals-hero {
@@ -371,6 +418,20 @@
     .info-request-box {
         padding: 1.5rem;
         margin: 1.5rem 0 2rem;
+    }
+    
+    .radio-video-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .radio-video-player {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    
+    .radio-video-content {
+        text-align: center;
     }
 }
 
