@@ -6,17 +6,6 @@ description: All-on-4治療の専門用語を患者さん向けにわかりや�
 # オールオン4治療に関するやさしい用語集
 
 <div class="glossary-intro">
-<div class="glossary-diagram">
-<img data-placeholder 
-     data-width="1200" 
-     data-height="800" 
-     data-label="All-on-4構造図"
-     data-src="/images/glossary/all-on-4-diagram.jpg" 
-     alt="All-on-4の構造図" 
-     loading="lazy">
-<p class="diagram-caption">図：All-on-4では4本のインプラント（人工歯根）で片顎の全ての人工歯を支えます。奥歯のインプラントは骨のある部分に斜めに埋め込まれ、手術当日に仮の歯を固定することも可能です。</p>
-</div>
-
 この用語集では、オールオン4（All-on-4）治療の前後や長期メンテナンスで出てくる専門用語を、一般の患者さん向けにわかりやすく説明しています。それぞれの用語を**「治療・手術関連」、「素材・構造関連」、「日常ケア・トラブル対応」、「麻酔・痛み・費用関連」**のカテゴリ別にまとめました。
 </div>
 

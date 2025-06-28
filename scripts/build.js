@@ -260,6 +260,36 @@ hospitalsData.hospitals.forEach(hospital => {
     hospitalsByRegion[hospital.region].push(hospital);
 });
 
+// Define region order by population
+const regionOrder = [
+    '東京都',
+    '神奈川県', 
+    '大阪府',
+    '愛知県',
+    '埼玉県',
+    '千葉県',
+    '福岡県',
+    '北海道',
+    '静岡県',
+    '宮城県',
+    '福島県',
+    '沖縄県'
+];
+
+// Sort hospitalsByRegion according to regionOrder
+const sortedHospitalsByRegion = {};
+regionOrder.forEach(region => {
+    if (hospitalsByRegion[region]) {
+        sortedHospitalsByRegion[region] = hospitalsByRegion[region];
+    }
+});
+// Add any remaining regions not in regionOrder
+Object.keys(hospitalsByRegion).forEach(region => {
+    if (!sortedHospitalsByRegion[region]) {
+        sortedHospitalsByRegion[region] = hospitalsByRegion[region];
+    }
+});
+
 // Generate region pages with luxury styling
 Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
     const regionSlug = region === '東京都' ? 'tokyo' :
@@ -396,7 +426,7 @@ const mainHospitalsHtml = `<!DOCTYPE html>
             </div>
             
             <div class="region-luxury-grid">
-                ${Object.entries(hospitalsByRegion).map(([region, hospitals]) => {
+                ${Object.entries(sortedHospitalsByRegion).map(([region, hospitals]) => {
                     const regionSlug = region === '東京都' ? 'tokyo' :
                                       region === '神奈川県' ? 'kanagawa' :
                                       region === '大阪府' ? 'osaka' :

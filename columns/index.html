@@ -35,13 +35,68 @@
         </section>
 
         <div class="container">
+            <!-- Tag Filter Section -->
+            <section class="tag-filter-section">
+                <h2 class="filter-title">興味のあるトピックを選択</h2>
+                <div class="tag-filter-grid">
+                    <button class="tag-filter-btn active" data-tag="all">
+                        すべて <span class="tag-count">56</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="基礎知識">
+                        #基礎知識 <span class="tag-count">12</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="費用">
+                        #費用 <span class="tag-count">8</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="手術">
+                        #手術 <span class="tag-count">14</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="メンテナンス">
+                        #メンテナンス <span class="tag-count">7</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="体験談">
+                        #体験談 <span class="tag-count">4</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="素材">
+                        #素材 <span class="tag-count">6</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="リスク">
+                        #リスク <span class="tag-count">5</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="医院選び">
+                        #医院選び <span class="tag-count">3</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="最新技術">
+                        #最新技術 <span class="tag-count">4</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="食事">
+                        #食事 <span class="tag-count">5</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="痛み">
+                        #痛み <span class="tag-count">3</span>
+                    </button>
+                    <button class="tag-filter-btn" data-tag="比較">
+                        #比較 <span class="tag-count">6</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Ad Section -->
+            <div class="column-ad-section">
+                <div class="ad-placeholder">
+                    <span>広告</span>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
             <div class="columns-content">
-                <div class="article-luxury-grid">
-                    <!-- 基礎知識 (Basic Knowledge) -->
-                    <h2 class="category-section-title">基礎知識</h2>
-                    
-                    <article class="article-luxury-card featured">
-                        <div class="article-category basic">基礎知識</div>
+                <div class="article-luxury-grid unified-grid">
+                    <!-- Featured Article 1 -->
+                    <article class="article-luxury-card featured" data-tags="基礎知識,比較">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                            <span class="article-tag-item">#比較</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="1200"
@@ -61,413 +116,12 @@
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category basic">基礎知識</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="All-on-4とは"
-                                 data-src="/images/columns/what-is-all-on-4.jpg"
-                                 alt="All-on-4とは"
-                                 loading="lazy">
+                    <!-- Featured Article 2 -->
+                    <article class="article-luxury-card featured" data-tags="費用,医院選び">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#費用</span>
+                            <span class="article-tag-item">#医院選び</span>
                         </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/what-is-all-on-4.html">All-on-4（オールオン4）とは？基本を分かりやすく解説</a></h2>
-                            <p class="article-excerpt">4本のインプラントで全ての歯を支える革新的な治療法。従来の総入れ歯との違いやメリットを詳しく解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">入門</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category basic">基礎知識</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="All-on-4の仕組み"
-                                 data-src="/images/columns/mechanism.jpg"
-                                 alt="All-on-4の仕組み"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/what-is-all-on-4-mechanism.html">All-on-4の仕組み：なぜ4本で全ての歯を支えられるのか</a></h2>
-                            <p class="article-excerpt">傾斜埋入技術と即時荷重の科学的原理。骨との結合メカニズムと長期安定性の秘密を解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">技術解説</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category basic">基礎知識</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="初心者ガイド"
-                                 data-src="/images/columns/beginners-guide.jpg"
-                                 alt="初心者ガイド"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/all-on-4-beginners-guide.html">All-on-4初心者ガイド：治療前に知っておくべき基本知識</a></h2>
-                            <p class="article-excerpt">治療の流れ、必要な検査、準備事項など、初めての方が安心して治療を受けるための基本情報。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約12分</span>
-                                <span class="article-tag">初心者向け</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category basic">基礎知識</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="歴史と背景"
-                                 data-src="/images/columns/history.jpg"
-                                 alt="歴史と背景"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/all-on-4-history-background.html">All-on-4の歴史と背景：革新的治療法の誕生ストーリー</a></h2>
-                            <p class="article-excerpt">ポルトガルのDr.パウロ・マローが開発した革命的な治療法。20年以上の実績と世界的な普及の歴史。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">歴史</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category basic">基礎知識</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="メリット・デメリット"
-                                 data-src="/images/columns/merits-demerits.jpg"
-                                 alt="メリット・デメリット"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/all-on-4-merits-demerits.html">All-on-4のメリット・デメリット：正直な評価と適応判断</a></h2>
-                            <p class="article-excerpt">即日で歯が入る、骨移植不要などのメリットと、高額費用、技術依存などのデメリットを公平に解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約11分</span>
-                                <span class="article-tag">比較検討</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category basic">基礎知識</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="適応条件"
-                                 data-src="/images/columns/suitable-candidates.jpg"
-                                 alt="適応条件"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/who-is-suitable-for-all-on-4.html">All-on-4に適している人・適していない人の条件</a></h2>
-                            <p class="article-excerpt">骨量、全身状態、生活習慣など、治療成功のための適応条件と禁忌事項を医学的観点から解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">適応判断</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 治療・手術 (Treatment/Surgery) -->
-                    <h2 class="category-section-title">治療・手術</h2>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="治療の流れ"
-                                 data-src="/images/columns/treatment-flow.jpg"
-                                 alt="治療の流れ"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/all-on-4-treatment-flow.html">All-on-4治療の流れ：初診から完成まで完全ガイド</a></h2>
-                            <p class="article-excerpt">初診相談から手術、仮歯装着、最終補綴物完成まで。各ステップの詳細と期間を時系列で解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約14分</span>
-                                <span class="article-tag">治療プロセス</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="手術当日の流れ"
-                                 data-src="/images/columns/surgery-day.jpg"
-                                 alt="手術当日の流れ"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/surgery-day-flow-guide.html">All-on-4手術当日の流れ：朝から夜までの詳細スケジュール</a></h2>
-                            <p class="article-excerpt">来院から麻酔、手術、仮歯装着、帰宅まで。当日の詳細なタイムラインと注意事項。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">手術ガイド</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="痛みと麻酔"
-                                 data-src="/images/columns/pain-anesthesia.jpg"
-                                 alt="痛みと麻酔"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/surgery-pain-anesthesia-explained.html">All-on-4の痛みと麻酔：手術中・術後の痛み管理完全ガイド</a></h2>
-                            <p class="article-excerpt">静脈内鎮静法、局所麻酔の使い分け。術後の痛みレベルと効果的な鎮痛管理方法。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">痛み管理</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="術前準備"
-                                 data-src="/images/columns/pre-surgery.jpg"
-                                 alt="術前準備"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/pre-surgery-preparation-guide.html">All-on-4手術前の準備：成功率を高める事前準備チェックリスト</a></h2>
-                            <p class="article-excerpt">口腔内清掃、全身状態の改善、禁煙など。手術成功率を最大化するための準備項目。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">術前準備</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="初診相談"
-                                 data-src="/images/columns/consultation.jpg"
-                                 alt="初診相談"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/initial-consultation-checklist.html">All-on-4初診相談チェックリスト：聞くべき20の質問</a></h2>
-                            <p class="article-excerpt">医院選びの決め手となる重要質問集。技術力、保証内容、費用など確認すべきポイント。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約11分</span>
-                                <span class="article-tag">相談準備</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="不安解消法"
-                                 data-src="/images/columns/anxiety-relief.jpg"
-                                 alt="不安解消法"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/anxiety-relief-before-treatment.html">All-on-4治療前の不安を解消する方法：心理的準備ガイド</a></h2>
-                            <p class="article-excerpt">手術への恐怖、失敗への不安を和らげる具体的方法。カウンセリングの活用と心理的サポート。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約7分</span>
-                                <span class="article-tag">心理サポート</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="術後即時ケア"
-                                 data-src="/images/columns/immediate-care.jpg"
-                                 alt="術後即時ケア"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/post-surgery-immediate-care.html">All-on-4術後24時間の過ごし方：即時ケアの重要ポイント</a></h2>
-                            <p class="article-excerpt">手術直後の安静、アイシング、服薬管理。最初の24時間で予後を左右する重要事項。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">術後ケア</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="痛み腫れ管理"
-                                 data-src="/images/columns/pain-swelling.jpg"
-                                 alt="痛み腫れ管理"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/pain-swelling-management.html">All-on-4術後の痛み・腫れ管理：1週間のケアガイド</a></h2>
-                            <p class="article-excerpt">術後の痛みピーク、腫れの経過、効果的な対処法。日ごとの症状変化と対応方法。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">症状管理</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="顔貌変化"
-                                 data-src="/images/columns/facial-changes.jpg"
-                                 alt="顔貌変化"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/aesthetic-facial-changes.html">All-on-4による審美的な顔貌変化：若返り効果の真実</a></h2>
-                            <p class="article-excerpt">咬合高径の回復による口元の改善、ほうれい線の軽減など、予想以上の審美的効果。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">審美効果</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="年齢と健康"
-                                 data-src="/images/columns/age-health.jpg"
-                                 alt="年齢と健康"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/age-health-considerations.html">高齢者のAll-on-4：年齢と健康状態による治療判断</a></h2>
-                            <p class="article-excerpt">70歳以上の治療実績、全身疾患との関係、高齢者特有のリスクと対策を詳しく解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">高齢者対応</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="食事制限"
-                                 data-src="/images/columns/diet-restrictions.jpg"
-                                 alt="食事制限"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/all-on-4-post-surgery-diet-restrictions.html">【保存版】オールオン4の手術後は厳しい食事制限がある？</a></h2>
-                            <p class="article-excerpt">術後3ヶ月間は流動食から段階的に移行。インプラント定着のための重要期間の過ごし方を詳しく解説。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約7分</span>
-                                <span class="article-tag">術後ケア</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="新しい歯での食事"
-                                 data-src="/images/columns/eating-new-teeth.jpg"
-                                 alt="新しい歯での食事"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/eating-with-new-teeth.html">All-on-4装着後の食事：新しい歯での食べ方完全ガイド</a></h2>
-                            <p class="article-excerpt">咀嚼の再学習、食べやすい食材の選び方、避けるべき食品など実践的アドバイス。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">食事指導</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category surgery">治療・手術</div>
-                        <div class="article-image">
-                            <img data-placeholder
-                                 data-width="800"
-                                 data-height="600"
-                                 data-label="生活適応"
-                                 data-src="/images/columns/life-adaptation.jpg"
-                                 alt="生活適応"
-                                 loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <h2><a href="/columns/life-adaptation-after-all-on-4.html">All-on-4後の生活適応：仕事復帰から運動再開まで</a></h2>
-                            <p class="article-excerpt">術後の仕事復帰時期、運動制限、旅行の可否など、日常生活への復帰ガイドライン。</p>
-                            <div class="article-meta">
-                                <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">生活復帰</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 費用・支払い (Cost/Payment) -->
-                    <h2 class="category-section-title">費用・支払い</h2>
-
-                    <article class="article-luxury-card featured">
-                        <div class="article-category cost">費用・支払い</div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="1200"
@@ -487,8 +141,439 @@
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category cost">費用・支払い</div>
+                    <!-- Regular Articles -->
+                    <article class="article-luxury-card" data-tags="基礎知識">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="All-on-4とは"
+                                 data-src="/images/columns/what-is-all-on-4.jpg"
+                                 alt="All-on-4とは"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/what-is-all-on-4.html">All-on-4（オールオン4）とは？基本を分かりやすく解説</a></h2>
+                            <p class="article-excerpt">4本のインプラントで全ての歯を支える革新的な治療法。従来の総入れ歯との違いやメリットを詳しく解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約8分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="基礎知識,最新技術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                            <span class="article-tag-item">#最新技術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="All-on-4の仕組み"
+                                 data-src="/images/columns/mechanism.jpg"
+                                 alt="All-on-4の仕組み"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/what-is-all-on-4-mechanism.html">All-on-4の仕組み：なぜ4本で全ての歯を支えられるのか</a></h2>
+                            <p class="article-excerpt">傾斜埋入技術と即時荷重の科学的原理。骨との結合メカニズムと長期安定性の秘密を解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約10分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="基礎知識,手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="初心者ガイド"
+                                 data-src="/images/columns/beginners-guide.jpg"
+                                 alt="初心者ガイド"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/all-on-4-beginners-guide.html">All-on-4初心者ガイド：治療前に知っておくべき基本知識</a></h2>
+                            <p class="article-excerpt">治療の流れ、必要な検査、準備事項など、初めての方が安心して治療を受けるための基本情報。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約12分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="基礎知識">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="歴史と背景"
+                                 data-src="/images/columns/history.jpg"
+                                 alt="歴史と背景"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/all-on-4-history-background.html">All-on-4の歴史と背景：革新的治療法の誕生ストーリー</a></h2>
+                            <p class="article-excerpt">ポルトガルのDr.パウロ・マローが開発した革命的な治療法。20年以上の実績と世界的な普及の歴史。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約9分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="基礎知識,比較">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                            <span class="article-tag-item">#比較</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="メリット・デメリット"
+                                 data-src="/images/columns/merits-demerits.jpg"
+                                 alt="メリット・デメリット"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/all-on-4-merits-demerits.html">All-on-4のメリット・デメリット：正直な評価と適応判断</a></h2>
+                            <p class="article-excerpt">即日で歯が入る、骨移植不要などのメリットと、高額費用、技術依存などのデメリットを公平に解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約11分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="基礎知識,リスク">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#基礎知識</span>
+                            <span class="article-tag-item">#リスク</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="適応条件"
+                                 data-src="/images/columns/suitable-candidates.jpg"
+                                 alt="適応条件"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/who-is-suitable-for-all-on-4.html">All-on-4に適している人・適していない人の条件</a></h2>
+                            <p class="article-excerpt">骨量、全身状態、生活習慣など、治療成功のための適応条件と禁忌事項を医学的観点から解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約9分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="治療の流れ"
+                                 data-src="/images/columns/treatment-flow.jpg"
+                                 alt="治療の流れ"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/all-on-4-treatment-flow.html">All-on-4治療の流れ：初診から完成まで完全ガイド</a></h2>
+                            <p class="article-excerpt">初診相談から手術、仮歯装着、最終補綴物完成まで。各ステップの詳細と期間を時系列で解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約14分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="手術当日の流れ"
+                                 data-src="/images/columns/surgery-day.jpg"
+                                 alt="手術当日の流れ"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/surgery-day-flow-guide.html">All-on-4手術当日の流れ：朝から夜までの詳細スケジュール</a></h2>
+                            <p class="article-excerpt">来院から麻酔、手術、仮歯装着、帰宅まで。当日の詳細なタイムラインと注意事項。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約10分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術,痛み">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                            <span class="article-tag-item">#痛み</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="痛みと麻酔"
+                                 data-src="/images/columns/pain-anesthesia.jpg"
+                                 alt="痛みと麻酔"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/surgery-pain-anesthesia-explained.html">All-on-4の痛みと麻酔：手術中・術後の痛み管理完全ガイド</a></h2>
+                            <p class="article-excerpt">静脈内鎮静法、局所麻酔の使い分け。術後の痛みレベルと効果的な鎮痛管理方法。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約8分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="術前準備"
+                                 data-src="/images/columns/pre-surgery.jpg"
+                                 alt="術前準備"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/pre-surgery-preparation-guide.html">All-on-4手術前の準備：成功率を高める事前準備チェックリスト</a></h2>
+                            <p class="article-excerpt">口腔内清掃、全身状態の改善、禁煙など。手術成功率を最大化するための準備項目。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約9分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術,医院選び">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                            <span class="article-tag-item">#医院選び</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="初診相談"
+                                 data-src="/images/columns/consultation.jpg"
+                                 alt="初診相談"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/initial-consultation-checklist.html">All-on-4初診相談チェックリスト：聞くべき20の質問</a></h2>
+                            <p class="article-excerpt">医院選びの決め手となる重要質問集。技術力、保証内容、費用など確認すべきポイント。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約11分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="不安解消法"
+                                 data-src="/images/columns/anxiety-relief.jpg"
+                                 alt="不安解消法"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/anxiety-relief-before-treatment.html">All-on-4治療前の不安を解消する方法：心理的準備ガイド</a></h2>
+                            <p class="article-excerpt">手術への恐怖、失敗への不安を和らげる具体的方法。カウンセリングの活用と心理的サポート。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約7分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術,メンテナンス">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                            <span class="article-tag-item">#メンテナンス</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="術後即時ケア"
+                                 data-src="/images/columns/immediate-care.jpg"
+                                 alt="術後即時ケア"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/post-surgery-immediate-care.html">All-on-4術後24時間の過ごし方：即時ケアの重要ポイント</a></h2>
+                            <p class="article-excerpt">手術直後の安静、アイシング、服薬管理。最初の24時間で予後を左右する重要事項。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約8分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術,痛み">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                            <span class="article-tag-item">#痛み</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="痛み腫れ管理"
+                                 data-src="/images/columns/pain-swelling.jpg"
+                                 alt="痛み腫れ管理"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/pain-swelling-management.html">All-on-4術後の痛み・腫れ管理：1週間のケアガイド</a></h2>
+                            <p class="article-excerpt">術後の痛みピーク、腫れの経過、効果的な対処法。日ごとの症状変化と対応方法。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約9分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="顔貌変化"
+                                 data-src="/images/columns/facial-changes.jpg"
+                                 alt="顔貌変化"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/aesthetic-facial-changes.html">All-on-4による審美的な顔貌変化：若返り効果の真実</a></h2>
+                            <p class="article-excerpt">咬合高径の回復による口元の改善、ほうれい線の軽減など、予想以上の審美的効果。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約8分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術,リスク">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                            <span class="article-tag-item">#リスク</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="年齢と健康"
+                                 data-src="/images/columns/age-health.jpg"
+                                 alt="年齢と健康"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/age-health-considerations.html">高齢者のAll-on-4：年齢と健康状態による治療判断</a></h2>
+                            <p class="article-excerpt">70歳以上の治療実績、全身疾患との関係、高齢者特有のリスクと対策を詳しく解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約10分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術,食事">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                            <span class="article-tag-item">#食事</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="食事制限"
+                                 data-src="/images/columns/diet-restrictions.jpg"
+                                 alt="食事制限"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/all-on-4-post-surgery-diet-restrictions.html">【保存版】オールオン4の手術後は厳しい食事制限がある？</a></h2>
+                            <p class="article-excerpt">術後3ヶ月間は流動食から段階的に移行。インプラント定着のための重要期間の過ごし方を詳しく解説。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約7分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="食事">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#食事</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="新しい歯での食事"
+                                 data-src="/images/columns/eating-new-teeth.jpg"
+                                 alt="新しい歯での食事"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/eating-with-new-teeth.html">All-on-4装着後の食事：新しい歯での食べ方完全ガイド</a></h2>
+                            <p class="article-excerpt">咀嚼の再学習、食べやすい食材の選び方、避けるべき食品など実践的アドバイス。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約9分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="手術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#手術</span>
+                        </div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="生活適応"
+                                 data-src="/images/columns/life-adaptation.jpg"
+                                 alt="生活適応"
+                                 loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <h2><a href="/columns/life-adaptation-after-all-on-4.html">All-on-4後の生活適応：仕事復帰から運動再開まで</a></h2>
+                            <p class="article-excerpt">術後の仕事復帰時期、運動制限、旅行の可否など、日常生活への復帰ガイドライン。</p>
+                            <div class="article-meta">
+                                <span class="read-time">読了時間: 約8分</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-luxury-card" data-tags="費用">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#費用</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -503,13 +588,14 @@
                             <p class="article-excerpt">検査費、手術費、材料費、技工料など項目別の費用相場。見積もりの妥当性を判断する基準。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">費用詳細</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category cost">費用・支払い</div>
+                    <article class="article-luxury-card" data-tags="費用">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#費用</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -524,13 +610,14 @@
                             <p class="article-excerpt">医療費控除、デンタルローン、保険活用など。高額治療費を賢く支払う実践的テクニック。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約11分</span>
-                                <span class="article-tag">節約術</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category cost">費用・支払い</div>
+                    <article class="article-luxury-card" data-tags="費用">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#費用</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -545,16 +632,14 @@
                             <p class="article-excerpt">高額治療選択者の70%は「健康への投資」として捉えている。なぜ高額な自由診療を選ぶのか分析。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約6分</span>
-                                <span class="article-tag">投資思考</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- ケア・メンテナンス (Care/Maintenance) -->
-                    <h2 class="category-section-title">ケア・メンテナンス</h2>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category care">ケア・メンテナンス</div>
+                    <article class="article-luxury-card" data-tags="メンテナンス">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#メンテナンス</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -574,8 +659,10 @@
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category care">ケア・メンテナンス</div>
+                    <article class="article-luxury-card" data-tags="メンテナンス">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#メンテナンス</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -590,13 +677,14 @@
                             <p class="article-excerpt">口臭の原因は「セルフケア不足」「素材の劣化」「メンテナンス不足」の3つ。正しいケアで防げます。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約6分</span>
-                                <span class="article-tag">メンテナンス</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category care">ケア・メンテナンス</div>
+                    <article class="article-luxury-card" data-tags="メンテナンス">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#メンテナンス</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -611,13 +699,15 @@
                             <p class="article-excerpt">All-on-4治療後のメンテナンスに最適なケア用品を厳選。電動歯ブラシとウォーターピックは必須です。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約7分</span>
-                                <span class="article-tag">ケア用品</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category care">ケア・メンテナンス</div>
+                    <article class="article-luxury-card" data-tags="メンテナンス,費用">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#メンテナンス</span>
+                            <span class="article-tag-item">#費用</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -632,13 +722,14 @@
                             <p class="article-excerpt">3ヶ月ごとの検診で何をチェックするのか。メンテナンス費用と長期予後への影響を解説。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">定期管理</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category care">ケア・メンテナンス</div>
+                    <article class="article-luxury-card" data-tags="メンテナンス">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#メンテナンス</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -653,16 +744,14 @@
                             <p class="article-excerpt">平均寿命15-20年を超えて使い続ける人の共通点。長期成功のための必須条件を分析。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">長期予後</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 医療安全 (Medical Safety) -->
-                    <h2 class="category-section-title">医療安全</h2>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category safety">医療安全</div>
+                    <article class="article-luxury-card" data-tags="リスク">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#リスク</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -677,13 +766,14 @@
                             <p class="article-excerpt">失敗の主因は「技術不足」「検査不備」「患者管理不足」。実際の失敗事例から学ぶ安全のポイント。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約5分</span>
-                                <span class="article-tag">安全性</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category safety">医療安全</div>
+                    <article class="article-luxury-card" data-tags="リスク">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#リスク</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -698,16 +788,14 @@
                             <p class="article-excerpt">感染、インプラント脱落、神経損傷など。起こりうる合併症と予防・対処法を医学的に解説。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約12分</span>
-                                <span class="article-tag">リスク管理</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 比較・国際 (Comparison/International) -->
-                    <h2 class="category-section-title">比較・国際</h2>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category comparison">比較・国際</div>
+                    <article class="article-luxury-card" data-tags="比較">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#比較</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -722,13 +810,15 @@
                             <p class="article-excerpt">初期費用、維持費、咀嚼力、審美性、QOLなど多角的に比較。長期的視点での選択基準。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約11分</span>
-                                <span class="article-tag">比較検討</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category comparison">比較・国際</div>
+                    <article class="article-luxury-card" data-tags="比較,最新技術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#比較</span>
+                            <span class="article-tag-item">#最新技術</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -743,13 +833,15 @@
                             <p class="article-excerpt">骨移植を回避できる確率72.5%。大規模研究が明らかにした、身体的・経済的負担を軽減する選択。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約7分</span>
-                                <span class="article-tag">比較研究</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category comparison">比較・国際</div>
+                    <article class="article-luxury-card" data-tags="比較,素材">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#比較</span>
+                            <span class="article-tag-item">#素材</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -764,13 +856,15 @@
                             <p class="article-excerpt">Nobel Biocare、Straumann、その他メーカーのシステム比較。技術的違いと選択基準。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">製品比較</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category comparison">比較・国際</div>
+                    <article class="article-luxury-card" data-tags="比較,費用">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#比較</span>
+                            <span class="article-tag-item">#費用</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -785,16 +879,16 @@
                             <p class="article-excerpt">タイ、韓国、ハンガリーなど海外治療の実態。費用削減と引き換えのリスクを詳細分析。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約12分</span>
-                                <span class="article-tag">国際比較</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 技術・最新情報 (Technology/Latest Info) -->
-                    <h2 class="category-section-title">技術・最新情報</h2>
-
-                    <article class="article-luxury-card featured">
-                        <div class="article-category technology">技術・最新情報</div>
+                    <!-- Featured Article 3 -->
+                    <article class="article-luxury-card featured" data-tags="素材,食事">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#素材</span>
+                            <span class="article-tag-item">#食事</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="1200"
@@ -814,8 +908,11 @@
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category technology">技術・最新情報</div>
+                    <article class="article-luxury-card" data-tags="素材,最新技術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#素材</span>
+                            <span class="article-tag-item">#最新技術</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -830,13 +927,14 @@
                             <p class="article-excerpt">チタンフレーム、ジルコニア、PEEK材など最新素材の特性比較。長期使用を前提とした選択指針。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約11分</span>
-                                <span class="article-tag">素材技術</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category technology">技術・最新情報</div>
+                    <article class="article-luxury-card" data-tags="最新技術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#最新技術</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -851,13 +949,14 @@
                             <p class="article-excerpt">CT撮影、CAD/CAM技術、ガイデッドサージェリーなど最新技術が実現する精密治療。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約10分</span>
-                                <span class="article-tag">最新技術</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category technology">技術・最新情報</div>
+                    <article class="article-luxury-card" data-tags="最新技術">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#最新技術</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -872,13 +971,15 @@
                             <p class="article-excerpt">10年生存率94.8%という高い成功率。20年以上の研究データから見る科学的エビデンス。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">学術研究</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category technology">技術・最新情報</div>
+                    <article class="article-luxury-card" data-tags="素材,食事">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#素材</span>
+                            <span class="article-tag-item">#食事</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -893,16 +994,15 @@
                             <p class="article-excerpt">レジン、ハイブリッド、ジルコニア別の食事制限。硬さ、粘着性、温度による影響を詳細解説。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約9分</span>
-                                <span class="article-tag">実用情報</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 体験談 (Experience) -->
-                    <h2 class="category-section-title">体験談</h2>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category experience">体験談</div>
+                    <article class="article-luxury-card" data-tags="体験談,費用">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#体験談</span>
+                            <span class="article-tag-item">#費用</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -922,8 +1022,11 @@
                         </div>
                     </article>
 
-                    <article class="article-luxury-card">
-                        <div class="article-category experience">体験談</div>
+                    <article class="article-luxury-card" data-tags="体験談,素材">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#体験談</span>
+                            <span class="article-tag-item">#素材</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -938,16 +1041,15 @@
                             <p class="article-excerpt">審美性は最高だが硬すぎる？実際に使用して分かったメリット・デメリットを包み隠さず公開。</p>
                             <div class="article-meta">
                                 <span class="read-time">読了時間: 約8分</span>
-                                <span class="article-tag">長期レビュー</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- その他 (Others) -->
-                    <h2 class="category-section-title">その他</h2>
-
-                    <article class="article-luxury-card">
-                        <div class="article-category clinic">医院選び</div>
+                    <article class="article-luxury-card" data-tags="医院選び,リスク">
+                        <div class="article-tags">
+                            <span class="article-tag-item">#医院選び</span>
+                            <span class="article-tag-item">#リスク</span>
+                        </div>
                         <div class="article-image">
                             <img data-placeholder
                                  data-width="800"
@@ -969,43 +1071,40 @@
                 </div>
 
                 <div class="columns-sidebar">
-                    <div class="column-categories">
-                        <h3>カテゴリー別</h3>
-                        <ul class="category-list">
-                            <li><a href="#" class="category-link basic">基礎知識</a></li>
-                            <li><a href="#" class="category-link surgery">治療・手術</a></li>
-                            <li><a href="#" class="category-link cost">費用・支払い</a></li>
-                            <li><a href="#" class="category-link care">ケア・メンテナンス</a></li>
-                            <li><a href="#" class="category-link safety">医療安全</a></li>
-                            <li><a href="#" class="category-link comparison">比較・国際</a></li>
-                            <li><a href="#" class="category-link technology">技術・最新情報</a></li>
-                            <li><a href="#" class="category-link experience">体験談</a></li>
-                            <li><a href="#" class="category-link clinic">医院選び</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="popular-topics">
-                        <h3>人気のトピック</h3>
-                        <div class="topic-tags">
-                            <span class="topic-tag">完全ガイド</span>
-                            <span class="topic-tag">費用内訳</span>
-                            <span class="topic-tag">医院選び</span>
-                            <span class="topic-tag">素材比較</span>
-                            <span class="topic-tag">ジルコニア</span>
-                            <span class="topic-tag">術後ケア</span>
-                            <span class="topic-tag">メンテナンス</span>
-                            <span class="topic-tag">失敗回避</span>
-                        </div>
-                    </div>
-
                     <div class="reading-guide">
                         <h3>読み進め方ガイド</h3>
                         <ol class="guide-steps">
-                            <li><strong>初めての方</strong><br>「All-on-4完全ガイド」から</li>
-                            <li><strong>費用が気になる方</strong><br>「費用内訳完全ガイド」へ</li>
-                            <li><strong>医院を探している方</strong><br>「医院選び10のポイント」</li>
-                            <li><strong>素材で迷っている方</strong><br>「素材完全ガイド」</li>
+                            <li><strong>初めての方</strong><br>「#基礎知識」タグから読み始めましょう</li>
+                            <li><strong>費用が気になる方</strong><br>「#費用」タグで絞り込みを</li>
+                            <li><strong>医院を探している方</strong><br>「#医院選び」タグをチェック</li>
+                            <li><strong>素材で迷っている方</strong><br>「#素材」タグで比較記事を</li>
                         </ol>
+                    </div>
+
+                    <div class="popular-topics">
+                        <h3>人気のタグ組み合わせ</h3>
+                        <div class="popular-combinations">
+                            <button class="combination-btn" data-tags="素材,食事">
+                                素材×食事
+                            </button>
+                            <button class="combination-btn" data-tags="手術,痛み">
+                                手術×痛み
+                            </button>
+                            <button class="combination-btn" data-tags="費用,医院選び">
+                                費用×医院選び
+                            </button>
+                            <button class="combination-btn" data-tags="メンテナンス,費用">
+                                メンテナンス×費用
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="filter-status">
+                        <h3>現在の絞り込み</h3>
+                        <div class="active-filters">
+                            <p class="no-filter">すべての記事を表示中</p>
+                        </div>
+                        <button class="clear-filters" style="display: none;">絞り込みをクリア</button>
                     </div>
                 </div>
             </div>
@@ -1035,107 +1134,309 @@
     </footer>
 
     <style>
-        /* Existing styles... */
-        
-        /* Category section titles */
-        .category-section-title {
-            grid-column: 1 / -1;
-            font-size: 1.8rem;
+        /* Tag Filter Section */
+        .tag-filter-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .filter-title {
+            font-size: 1.6rem;
             font-family: var(--font-serif);
             color: var(--midnight);
-            margin: 3rem 0 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--gold);
+            margin-bottom: 1.5rem;
+            text-align: center;
         }
-        
-        .category-section-title:first-child {
-            margin-top: 0;
+
+        .tag-filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 0.8rem;
         }
-        
-        /* New category colors */
-        .article-category.cost { background: #E67E22; }
-        .article-category.clinic { background: #9B59B6; }
-        .article-category.surgery { background: #2ECC71; }
-        .article-category.safety { background: #E74C3C; }
-        .article-category.comparison { background: #3498DB; }
-        .article-category.technology { background: #1ABC9C; }
-        .article-category.experience { background: #F39C12; }
-        
-        .category-link.cost { color: #E67E22; }
-        .category-link.clinic { color: #9B59B6; }
-        .category-link.surgery { color: #2ECC71; }
-        .category-link.safety { color: #E74C3C; }
-        .category-link.comparison { color: #3498DB; }
-        .category-link.technology { color: #1ABC9C; }
-        .category-link.experience { color: #F39C12; }
-        
-        /* Featured article */
+
+        .tag-filter-btn {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            font-weight: 500;
+            color: var(--midnight);
+        }
+
+        .tag-filter-btn:hover {
+            border-color: var(--gold);
+            background: var(--soft-gold);
+        }
+
+        .tag-filter-btn.active {
+            background: var(--midnight);
+            color: white;
+            border-color: var(--midnight);
+        }
+
+        .tag-count {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            font-weight: normal;
+        }
+
+        /* Ad Section */
+        .column-ad-section {
+            margin: 2rem 0;
+        }
+
+        .ad-placeholder {
+            background: #f8f8f8;
+            border: 2px dashed #ddd;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            border-radius: 8px;
+        }
+
+        /* Unified Grid */
+        .unified-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Article Tags */
+        .article-tags {
+            display: flex;
+            gap: 0.4rem;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .article-tag-item {
+            background: var(--soft-gold);
+            color: var(--dark-gold);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Remove old category styles */
+        .article-category {
+            display: none;
+        }
+
+        /* Featured articles span 2 columns */
         .article-luxury-card.featured {
             grid-column: span 2;
-            border-left-width: 6px;
         }
-        
-        .article-luxury-card.featured .article-content {
-            padding: 2.5rem;
-        }
-        
-        .article-luxury-card.featured h2 {
-            font-size: 1.6rem;
-        }
-        
-        /* Reading guide */
-        .reading-guide {
+
+        /* Sidebar modifications */
+        .filter-status {
             background: white;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             margin-top: 2rem;
         }
-        
-        .reading-guide h3 {
+
+        .filter-status h3 {
             color: var(--dark-gold);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-family: var(--font-serif);
+            font-size: 1.2rem;
         }
-        
-        .guide-steps {
-            list-style: none;
-            padding: 0;
-            counter-reset: step-counter;
+
+        .active-filters {
+            margin-bottom: 1rem;
         }
-        
-        .guide-steps li {
-            position: relative;
-            padding-left: 2.5rem;
-            margin-bottom: 1.5rem;
-            counter-increment: step-counter;
+
+        .no-filter {
+            color: #666;
+            font-size: 0.9rem;
         }
-        
-        .guide-steps li:before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 2rem;
-            height: 2rem;
+
+        .active-filter-tag {
+            display: inline-block;
+            background: var(--midnight);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            margin: 0.2rem;
+            font-size: 0.85rem;
+        }
+
+        .clear-filters {
             background: var(--gold);
             color: var(--midnight);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            width: 100%;
+            transition: all 0.3s ease;
         }
-        
+
+        .clear-filters:hover {
+            background: var(--dark-gold);
+        }
+
+        /* Popular combinations */
+        .popular-combinations {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .combination-btn {
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 0.5rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .combination-btn:hover {
+            background: var(--soft-gold);
+            border-color: var(--gold);
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .article-luxury-card.featured {
                 grid-column: span 1;
+            }
+            
+            .unified-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tag-filter-grid {
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                gap: 0.5rem;
+            }
+            
+            .tag-filter-btn {
+                font-size: 0.8rem;
+                padding: 0.5rem 0.8rem;
+            }
+            
+            .unified-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 
     <script src="/js/main.js"></script>
     <script src="/js/placeholder-images.js"></script>
+    <script>
+        // Tag filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.tag-filter-btn');
+            const articles = document.querySelectorAll('.article-luxury-card');
+            const activeFiltersDiv = document.querySelector('.active-filters');
+            const clearButton = document.querySelector('.clear-filters');
+            const combinationButtons = document.querySelectorAll('.combination-btn');
+            
+            let activeTags = [];
+
+            function updateArticleVisibility() {
+                articles.forEach(article => {
+                    if (activeTags.length === 0 || activeTags.includes('all')) {
+                        article.style.display = 'block';
+                    } else {
+                        const articleTags = article.dataset.tags ? article.dataset.tags.split(',') : [];
+                        const hasAllTags = activeTags.every(tag => articleTags.includes(tag));
+                        article.style.display = hasAllTags ? 'block' : 'none';
+                    }
+                });
+                
+                updateFilterStatus();
+            }
+
+            function updateFilterStatus() {
+                if (activeTags.length === 0 || activeTags.includes('all')) {
+                    activeFiltersDiv.innerHTML = '<p class="no-filter">すべての記事を表示中</p>';
+                    clearButton.style.display = 'none';
+                } else {
+                    const tagHTML = activeTags.map(tag => 
+                        `<span class="active-filter-tag">#${tag}</span>`
+                    ).join('');
+                    activeFiltersDiv.innerHTML = tagHTML;
+                    clearButton.style.display = 'block';
+                }
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tag = this.dataset.tag;
+                    
+                    if (tag === 'all') {
+                        activeTags = [];
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                    } else {
+                        // Remove 'all' button active state
+                        document.querySelector('[data-tag="all"]').classList.remove('active');
+                        
+                        if (this.classList.contains('active')) {
+                            this.classList.remove('active');
+                            activeTags = activeTags.filter(t => t !== tag);
+                        } else {
+                            this.classList.add('active');
+                            activeTags.push(tag);
+                        }
+                        
+                        // If no tags selected, activate 'all'
+                        if (activeTags.length === 0) {
+                            document.querySelector('[data-tag="all"]').classList.add('active');
+                        }
+                    }
+                    
+                    updateArticleVisibility();
+                });
+            });
+
+            clearButton.addEventListener('click', function() {
+                activeTags = [];
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                document.querySelector('[data-tag="all"]').classList.add('active');
+                updateArticleVisibility();
+            });
+
+            // Combination buttons
+            combinationButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tags = this.dataset.tags.split(',');
+                    activeTags = tags;
+                    
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        if (tags.includes(btn.dataset.tag)) {
+                            btn.classList.add('active');
+                        }
+                    });
+                    
+                    document.querySelector('[data-tag="all"]').classList.remove('active');
+                    updateArticleVisibility();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
