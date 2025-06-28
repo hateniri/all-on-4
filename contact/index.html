@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All-on-4に関するご質問、医院掲載のご希望など、お気軽にお問い合わせください。">
+    <title>お問い合わせ｜All-on-4情報サイト</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="/">All-on-4 INFO</a></h1>
+                <ul class="nav-menu">
+                    <li><a href="/">ホーム</a></li>
+                    <li><a href="/columns/">コラム</a></li>
+                    <li><a href="/hospitals/">病院検索</a></li>
+                    <li><a href="/faq/">よくある質問</a></li>
+                    <li><a href="/contact/" class="active">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>お問い合わせ</h1>
+            <p class="lead">All-on-4に関するご質問、医院掲載のご希望、その他お問い合わせは以下のフォームよりお送りください。</p>
+
+            <div class="contact-grid">
+                <div class="contact-form-section">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="inquiry-type">お問い合わせ種別 <span class="required">*</span></label>
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">選択してください</option>
+                                <option value="general">一般的なご質問</option>
+                                <option value="treatment">治療に関するご相談</option>
+                                <option value="hospital">医院掲載のご希望</option>
+                                <option value="correction">情報の修正依頼</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">件名 <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="8" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                <a href="/privacy/" target="_blank">プライバシーポリシー</a>に同意する
+                            </label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary">送信する</button>
+                        </div>
+                    </form>
+
+                    <div class="form-note">
+                        <p><span class="required">*</span> は必須項目です</p>
+                        <p>お問い合わせいただいた内容は、3営業日以内に返信いたします。</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>お問い合わせについて</h2>
+                    
+                    <div class="info-box">
+                        <h3>🏥 医院掲載をご希望の方へ</h3>
+                        <p>All-on-4対応医院の掲載は無料です。以下の情報をお知らせください：</p>
+                        <ul>
+                            <li>医院名・住所</li>
+                            <li>公式サイトURL</li>
+                            <li>All-on-4の症例数</li>
+                            <li>対応可能な治療（ジルコニア、静脈内鎮静法など）</li>
+                            <li>特徴・アピールポイント</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>📧 返信について</h3>
+                        <p>通常3営業日以内に返信いたします。1週間経っても返信がない場合は、メールアドレスの入力ミスか、迷惑メールフォルダをご確認ください。</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>💡 よくあるご質問</h3>
+                        <p>お問い合わせの前に、<a href="/faq/">よくある質問ページ</a>もご確認ください。多くの疑問が解決できるかもしれません。</p>
+                    </div>
+
+                    <div class="info-box warning">
+                        <h3>⚠️ ご注意</h3>
+                        <p>当サイトは情報提供を目的としており、医療行為や診断は行っておりません。具体的な治療については、必ず歯科医師にご相談ください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 All-on-4 INFO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .lead {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+
+        .form-submit {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .form-submit .btn-primary {
+            background: #0066cc;
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .form-submit .btn-primary:hover {
+            background: #0052a3;
+        }
+
+        .form-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .info-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box h3 {
+            margin-bottom: 1rem;
+            color: #0066cc;
+            font-size: 1.1rem;
+        }
+
+        .info-box ul {
+            margin-left: 1.5rem;
+            color: #666;
+        }
+
+        .info-box.warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+        }
+
+        .info-box.warning h3 {
+            color: #856404;
+        }
+
+        .nav-menu .active {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        // フォーム送信処理（実際の実装では適切なバックエンドAPIに接続）
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // フォームデータを収集
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // ここで実際のAPI送信処理を行う
+            console.log('Form data:', data);
+            
+            // 仮の成功メッセージ
+            alert('お問い合わせありがとうございます。送信が完了しました。3営業日以内に返信いたします。');
+            
+            // フォームをリセット
+            this.reset();
+        });
+    </script>
+</body>
+</html>

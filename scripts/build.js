@@ -28,7 +28,7 @@ fs.copyFileSync(
 );
 
 // Copy section index.html files
-const sectionDirs = ['columns', 'hospitals', 'faq'];
+const sectionDirs = ['columns', 'hospitals', 'faq', 'contact'];
 sectionDirs.forEach(dir => {
     const indexPath = path.join(__dirname, '..', dir, 'index.html');
     const destPath = path.join(distDir, dir, 'index.html');
