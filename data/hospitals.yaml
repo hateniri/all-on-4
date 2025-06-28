@@ -117,6 +117,17 @@ hospitals:
       天神に位置するインプラント治療クリニック。
       詳細な治療内容については、直接医院にお問い合わせください。
 
+  # 北海道
+  - id: hokkaido_implant01
+    name: 札幌オールオンフォークリニック
+    region: 北海道
+    address: 北海道札幌市中央区大通西3-6-1
+    website: https://sapporo-allon4.jp
+    image: /images/hospitals/hokkaido_implant01.jpg
+    description: |
+      札幌大通に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
+
 # データ構造説明
 # id: 一意識別子（地域_implant連番）
 # name: 医院名
