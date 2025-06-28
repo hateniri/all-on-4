@@ -11,7 +11,7 @@ if (!fs.existsSync(distDir)) {
 }
 
 // Copy static files
-const staticDirs = ['css', 'js', 'data'];
+const staticDirs = ['css', 'js', 'data', 'images'];
 staticDirs.forEach(dir => {
     const srcPath = path.join(__dirname, '..', dir);
     const destPath = path.join(distDir, dir);
@@ -26,6 +26,21 @@ fs.copyFileSync(
     path.join(__dirname, '..', 'index.html'),
     path.join(distDir, 'index.html')
 );
+
+// Copy section index.html files
+const sectionDirs = ['columns', 'hospitals', 'faq'];
+sectionDirs.forEach(dir => {
+    const indexPath = path.join(__dirname, '..', dir, 'index.html');
+    const destPath = path.join(distDir, dir, 'index.html');
+    
+    if (fs.existsSync(indexPath)) {
+        const destDir = path.dirname(destPath);
+        if (!fs.existsSync(destDir)) {
+            fs.mkdirSync(destDir, { recursive: true });
+        }
+        fs.copyFileSync(indexPath, destPath);
+    }
+});
 
 // Generate HTML from Markdown files
 function generateHtmlFromMarkdown(mdPath, outputPath) {
