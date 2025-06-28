@@ -36,6 +36,15 @@
         <div class="container">
             <h2 class="section-title">地域別医院一覧</h2>
             
+            <div class="info-request-box">
+                <div class="info-icon">📢</div>
+                <h3>情報提供のお願い</h3>
+                <p>All-on-4対応医院の情報を募集しています！</p>
+                <p>お近くでAll-on-4治療を行っている医院をご存知の方は、ぜひ情報をお寄せください。<br>
+                患者様からの情報提供により、より充実した医院リストの作成を目指しています。</p>
+                <a href="/contact/" class="btn-gold">医院情報を提供する</a>
+            </div>
+            
             <div class="region-luxury-grid">
                 <div class="region-luxury-card">
                     <div class="region-header tokyo">
@@ -160,6 +169,55 @@
                 </div>
             </div>
 
+
+            <div class="missing-regions-box">
+                <h3>🗾 まだ掲載のない地域</h3>
+                <p>以下の地域のAll-on-4対応医院情報も募集中です：</p>
+                <div class="region-list">
+                    <span class="region-tag">青森県</span>
+                    <span class="region-tag">岩手県</span>
+                    <span class="region-tag">宮城県</span>
+                    <span class="region-tag">秋田県</span>
+                    <span class="region-tag">山形県</span>
+                    <span class="region-tag">福島県</span>
+                    <span class="region-tag">茨城県</span>
+                    <span class="region-tag">栃木県</span>
+                    <span class="region-tag">群馬県</span>
+                    <span class="region-tag">埼玉県</span>
+                    <span class="region-tag">千葉県</span>
+                    <span class="region-tag">新潟県</span>
+                    <span class="region-tag">富山県</span>
+                    <span class="region-tag">石川県</span>
+                    <span class="region-tag">福井県</span>
+                    <span class="region-tag">山梨県</span>
+                    <span class="region-tag">長野県</span>
+                    <span class="region-tag">岐阜県</span>
+                    <span class="region-tag">静岡県</span>
+                    <span class="region-tag">三重県</span>
+                    <span class="region-tag">滋賀県</span>
+                    <span class="region-tag">京都府</span>
+                    <span class="region-tag">兵庫県</span>
+                    <span class="region-tag">奈良県</span>
+                    <span class="region-tag">和歌山県</span>
+                    <span class="region-tag">鳥取県</span>
+                    <span class="region-tag">島根県</span>
+                    <span class="region-tag">岡山県</span>
+                    <span class="region-tag">広島県</span>
+                    <span class="region-tag">山口県</span>
+                    <span class="region-tag">徳島県</span>
+                    <span class="region-tag">香川県</span>
+                    <span class="region-tag">愛媛県</span>
+                    <span class="region-tag">高知県</span>
+                    <span class="region-tag">佐賀県</span>
+                    <span class="region-tag">長崎県</span>
+                    <span class="region-tag">熊本県</span>
+                    <span class="region-tag">大分県</span>
+                    <span class="region-tag">宮崎県</span>
+                    <span class="region-tag">鹿児島県</span>
+                    <span class="region-tag">沖縄県</span>
+                </div>
+                <p class="help-text">お住まいの地域でAll-on-4治療を受けられた方、対応医院をご存知の方は、ぜひ情報をお寄せください。</p>
+            </div>
 
             <div id="hospital-filters"></div>
         </div>
@@ -374,6 +432,100 @@
         .premium-feature p {
             color: var(--charcoal);
             line-height: 1.6;
+        }
+        /* Info Request Box */
+        .info-request-box {
+            background: linear-gradient(135deg, var(--champagne), var(--pearl));
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .info-request-box .info-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-request-box h3 {
+            font-family: var(--font-serif);
+            color: var(--dark-gold);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .info-request-box p {
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-request-box .btn-gold {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: var(--midnight);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .info-request-box .btn-gold:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Missing Regions Box */
+        .missing-regions-box {
+            background: white;
+            border-radius: 8px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--gold);
+        }
+
+        .missing-regions-box h3 {
+            font-family: var(--font-serif);
+            color: var(--dark-gold);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .missing-regions-box p {
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .region-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .region-tag {
+            background: var(--pearl);
+            color: var(--charcoal);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .region-tag:hover {
+            background: var(--champagne);
+            color: var(--dark-gold);
+        }
+
+        .help-text {
+            color: var(--charcoal);
+            font-size: 0.95rem;
+            text-align: center;
+            margin-top: 1.5rem;
         }
     </style>
 
