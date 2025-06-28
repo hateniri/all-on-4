@@ -1,0 +1,141 @@
+# All-on-4対応医院データベース
+# 各医院の情報を構造化して管理
+
+hospitals:
+  # 東京都
+  - id: tokyo_implant01
+    name: 東京プレミアムインプラント
+    region: 東京都
+    address: 東京都港区南青山2-11-1
+    website: https://tokyo-premium-implant.jp
+    allon4: true
+    zirconia: true
+    sedation: true
+    stars: 4.8
+    review_count: 52
+    comment: 上下ジルコニア対応、即日固定も可能な医院
+
+  - id: tokyo_implant02
+    name: 銀座オーラルクリニック
+    region: 東京都
+    address: 東京都中央区銀座4-3-9
+    website: https://ginza-oral.com
+    allon4: true
+    zirconia: true
+    sedation: true
+    stars: 4.6
+    review_count: 89
+    comment: 銀座の立地で通いやすい、セカンドオピニオン対応
+
+  - id: tokyo_implant03
+    name: 新宿インプラントセンター
+    region: 東京都
+    address: 東京都新宿区西新宿1-18-5
+    website: https://shinjuku-implant.jp
+    allon4: true
+    zirconia: false
+    sedation: true
+    stars: 4.3
+    review_count: 127
+    comment: 大規模センターで症例数豊富、分割払い対応
+
+  # 神奈川県
+  - id: kanagawa_implant01
+    name: 横浜みなとインプラント
+    region: 神奈川県
+    address: 神奈川県横浜市西区みなとみらい3-5-1
+    website: https://yokohama-minato-implant.jp
+    allon4: true
+    zirconia: true
+    sedation: true
+    stars: 4.7
+    review_count: 65
+    comment: みなとみらい駅直結、最新CT完備
+
+  - id: kanagawa_implant02
+    name: 湘南デンタルクリニック
+    region: 神奈川県
+    address: 神奈川県藤沢市南藤沢21-1
+    website: https://shonan-dental.jp
+    allon4: true
+    zirconia: true
+    sedation: false
+    stars: 4.5
+    review_count: 43
+    comment: 湘南エリアで実績多数、海外研修経験医師在籍
+
+  # 大阪府
+  - id: osaka_implant01
+    name: 大阪梅田インプラントセンター
+    region: 大阪府
+    address: 大阪府大阪市北区梅田1-11-4
+    website: https://osaka-umeda-implant.jp
+    allon4: true
+    zirconia: true
+    sedation: true
+    stars: 4.9
+    review_count: 112
+    comment: 関西最大級の施設、年間500症例以上
+
+  - id: osaka_implant02
+    name: なんばオーラルケアクリニック
+    region: 大阪府
+    address: 大阪府大阪市中央区難波4-7-2
+    website: https://namba-oral.jp
+    allon4: true
+    zirconia: false
+    sedation: true
+    stars: 4.4
+    review_count: 76
+    comment: なんば駅徒歩3分、夜間診療対応
+
+  # 愛知県
+  - id: aichi_implant01
+    name: 名古屋セントラルインプラント
+    region: 愛知県
+    address: 愛知県名古屋市中村区名駅3-28-12
+    website: https://nagoya-central-implant.jp
+    allon4: true
+    zirconia: true
+    sedation: true
+    stars: 4.7
+    review_count: 58
+    comment: 名古屋駅直結、東海地方最大規模
+
+  # 福岡県
+  - id: fukuoka_implant01
+    name: 博多インプラントクリニック
+    region: 福岡県
+    address: 福岡県福岡市博多区博多駅前2-5-1
+    website: https://hakata-implant.jp
+    allon4: true
+    zirconia: true
+    sedation: true
+    stars: 4.6
+    review_count: 91
+    comment: 九州全域から患者来院、無料送迎サービス有
+
+  - id: fukuoka_implant02
+    name: 天神デンタルインプラント
+    region: 福岡県
+    address: 福岡県福岡市中央区天神2-14-8
+    website: https://tenjin-dental-implant.jp
+    allon4: true
+    zirconia: false
+    sedation: false
+    stars: 4.2
+    review_count: 34
+    comment: 天神エリアでアクセス良好、土日診療可
+
+# データ構造説明
+# id: 一意識別子（地域_implant連番）
+# name: 医院名
+# region: 都道府県
+# address: 住所
+# website: 公式サイトURL
+# allon4: All-on-4対応可否
+# zirconia: ジルコニア対応可否
+# sedation: 静脈内鎮静法対応可否
+# stars: 評価（5点満点）
+# review_count: レビュー数
+# comment: 特徴・備考

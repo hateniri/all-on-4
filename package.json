@@ -1,0 +1,33 @@
+{
+  "name": "all-on-4-info-site",
+  "version": "1.0.0",
+  "description": "All-on-4治療情報サイト",
+  "scripts": {
+    "dev": "http-server . -p 3000",
+    "build": "node scripts/build.js",
+    "generate": "node scripts/generate-html.js",
+    "test": "echo \"No tests specified\"",
+    "lint": "prettier --check '**/*.{html,css,js,json,md}'",
+    "format": "prettier --write '**/*.{html,css,js,json,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hateniri/all-on-4.git"
+  },
+  "keywords": [
+    "all-on-4",
+    "implant",
+    "dental"
+  ],
+  "author": "hateniri",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "marked": "^9.1.6",
+    "js-yaml": "^4.1.0",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}
