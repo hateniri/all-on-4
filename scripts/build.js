@@ -57,6 +57,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     <title>${data.title || 'All-on-4情報サイト'}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/luxury-style.css">
+    ${mdPath.includes('glossary.md') ? '<link rel="stylesheet" href="/css/glossary.css">' : ''}
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -88,6 +89,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
                     <li><a href="/">ホーム</a></li>
                     <li><a href="/columns/">コラム</a></li>
                     <li><a href="/hospitals/">病院検索</a></li>
+                    <li><a href="/glossary/">用語集</a></li>
                     <li><a href="/faq/">よくある質問</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
@@ -95,6 +97,21 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
         </nav>
     </header>
     <main>
+        ${mdPath.includes('glossary.md') ? `
+        <!-- Glossary Hero -->
+        <section class="glossary-hero">
+            <div class="container">
+                <h1 class="page-title">${data.title || 'All-on-4用語集'}</h1>
+                <p class="page-subtitle">専門用語をわかりやすく解説します</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <article class="glossary-content">
+                ${htmlContent}
+            </article>
+        </div>
+        ` : `
         <!-- Article Hero -->
         <section class="article-hero">
             <div class="container">
@@ -111,6 +128,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
                 ${htmlContent}
             </article>
         </div>
+        `}
     </main>
     <footer>
         <div class="container">
@@ -175,6 +193,18 @@ if (fs.existsSync(reviewsDir)) {
     });
 }
 
+// Process glossary
+const glossaryPath = path.join(__dirname, '..', 'glossary.md');
+const glossaryDistDir = path.join(distDir, 'glossary');
+
+if (fs.existsSync(glossaryPath)) {
+    if (!fs.existsSync(glossaryDistDir)) {
+        fs.mkdirSync(glossaryDistDir, { recursive: true });
+    }
+    const htmlPath = path.join(glossaryDistDir, 'index.html');
+    generateHtmlFromMarkdown(glossaryPath, htmlPath);
+}
+
 // Create hospital pages by region
 const hospitalsData = yaml.load(
     fs.readFileSync(path.join(__dirname, '..', 'data', 'hospitals.yaml'), 'utf-8')
@@ -220,6 +250,7 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
                     <li><a href="/">ホーム</a></li>
                     <li><a href="/columns/">コラム</a></li>
                     <li><a href="/hospitals/">病院検索</a></li>
+                    <li><a href="/glossary/">用語集</a></li>
                     <li><a href="/faq/">よくある質問</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
