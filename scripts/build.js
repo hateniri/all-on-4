@@ -56,6 +56,27 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${data.title || 'All-on-4情報サイト'}</title>
     <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "${data.title || path.basename(mdPath, '.md')}",
+      "description": "${content.substring(0, 160).replace(/[#\n]/g, '').trim()}",
+      "author": {
+        "@type": "Organization",
+        "name": "All-on-4 INFO"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "All-on-4 INFO",
+        "url": "https://all-on-4.vercel.app/"
+      },
+      "datePublished": "${new Date().toISOString()}",
+      "inLanguage": "ja"
+    }
+    </script>
 </head>
 <body>
     <header>

@@ -7,6 +7,58 @@
     <title>All-on-4情報サイト｜オールオン4の費用・治療・病院検索</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="canonical" href="https://all-on-4.vercel.app/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "All-on-4情報サイト",
+      "description": "All-on-4（オールオン4）治療の総合情報サイト。費用、治療内容、病院検索、体験談、Q&Aなど、All-on-4に関するすべての情報を提供します。",
+      "url": "https://all-on-4.vercel.app/",
+      "inLanguage": "ja",
+      "specialty": "Dentistry",
+      "about": {
+        "@type": "MedicalProcedure",
+        "name": "All-on-4",
+        "alternateName": "オールオン4",
+        "description": "4本のインプラントで全顎の歯を支える革新的な治療法"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "MedicalClinic",
+              "name": "東京プレミアムインプラント",
+              "address": "東京都港区南青山2-11-1",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "52"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "MedicalClinic",
+              "name": "大阪梅田インプラントセンター",
+              "address": "大阪府大阪市北区梅田1-11-4",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "112"
+              }
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -61,20 +113,73 @@
                 <h2>人気記事</h2>
                 <div class="article-list">
                     <article class="article-card">
-                        <h3><a href="/columns/what-is-all-on-4.html">All-on-4とは何か？従来のインプラントとの違い</a></h3>
-                        <p>All-on-4の基本的な仕組みと、従来のインプラント治療との違いを詳しく解説します。</p>
+                        <div class="card-image">
+                            <img data-src="/images/column-what-is-all-on-4.svg" 
+                                 alt="All-on-4の仕組み" 
+                                 class="lazy"
+                                 width="300" 
+                                 height="200">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="tag">#基礎知識</span>
+                                <span class="reading-time">5分で読める</span>
+                            </div>
+                            <h3><a href="/columns/what-is-all-on-4.html">All-on-4とは何か？従来のインプラントとの違い</a></h3>
+                            <p>All-on-4の基本的な仕組みと、従来のインプラント治療との違いを詳しく解説します。</p>
+                        </div>
                     </article>
                     <article class="article-card">
-                        <h3><a href="/columns/zirconia-million-yen-experience.html">上下ジルコニア＋特殊加工で1000万円超えた私の体験談</a></h3>
-                        <p>高額なAll-on-4治療を選択した経営者の赤裸々な体験記。なぜ1000万円を投資したのか。</p>
+                        <div class="card-image">
+                            <img data-src="/images/column-zirconia-experience.svg" 
+                                 alt="ジルコニアクラウン" 
+                                 class="lazy"
+                                 width="300" 
+                                 height="200">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="tag">#体験談</span>
+                                <span class="tag premium">#プレミアム治療</span>
+                                <span class="reading-time">6分で読める</span>
+                            </div>
+                            <h3><a href="/columns/zirconia-million-yen-experience.html">上下ジルコニア＋特殊加工で1000万円超えた私の体験談</a></h3>
+                            <p>高額なAll-on-4治療を選択した経営者の赤裸々な体験記。なぜ1000万円を投資したのか。</p>
+                        </div>
                     </article>
                     <article class="article-card">
-                        <h3><a href="/columns/implant-failure-and-safety.html">インプラント失敗談とAll-on-4の安全性</a></h3>
-                        <p>実際の失敗事例から学ぶ、安全なAll-on-4治療のためのチェックポイント。</p>
+                        <div class="card-image">
+                            <img data-src="/images/column-implant-failure.svg" 
+                                 alt="インプラントX線画像" 
+                                 class="lazy"
+                                 width="300" 
+                                 height="200">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="tag">#医療安全</span>
+                                <span class="reading-time">5分で読める</span>
+                            </div>
+                            <h3><a href="/columns/implant-failure-and-safety.html">インプラント失敗談とAll-on-4の安全性</a></h3>
+                            <p>実際の失敗事例から学ぶ、安全なAll-on-4治療のためのチェックポイント。</p>
+                        </div>
                     </article>
                     <article class="article-card">
-                        <h3><a href="/columns/oral-care-goods-top10.html">おすすめオーラルケアグッズ10選（All-on-4対応）</a></h3>
-                        <p>All-on-4治療後のメンテナンスに最適なケア用品を厳選して紹介。</p>
+                        <div class="card-image">
+                            <img data-src="/images/column-oral-care-goods.svg" 
+                                 alt="オーラルケア製品" 
+                                 class="lazy"
+                                 width="300" 
+                                 height="200">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="tag">#ケア用品</span>
+                                <span class="reading-time">7分で読める</span>
+                            </div>
+                            <h3><a href="/columns/oral-care-goods-top10.html">おすすめオーラルケアグッズ10選（All-on-4対応）</a></h3>
+                            <p>All-on-4治療後のメンテナンスに最適なケア用品を厳選して紹介。</p>
+                        </div>
                     </article>
                 </div>
                 <div class="more-link">
@@ -149,5 +254,6 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script src="/js/image-optimization.js"></script>
 </body>
 </html>

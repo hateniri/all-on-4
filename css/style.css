@@ -152,22 +152,88 @@ header {
 
 .article-list {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
 
 .article-card {
     background-color: #fff;
-    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #e9ecef;
+    color: #495057;
+    font-size: 0.75rem;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.tag.premium {
+    background: #ffd700;
+    color: #333;
+}
+
+.reading-time {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    color: #6c757d;
+    font-size: 0.75rem;
 }
 
 .article-card h3 {
     margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .article-card h3 a {
     color: #333;
+    text-decoration: none;
+}
+
+.article-card h3 a:hover {
+    color: #0066cc;
+}
+
+.article-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 /* Hospital Search Section */
@@ -285,6 +351,33 @@ footer {
     padding-top: 2rem;
     border-top: 1px solid #555;
     color: #999;
+}
+
+/* Image Optimization Styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img.lazy {
+    background: #f0f0f0;
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+
+img.loaded {
+    filter: blur(0);
+}
+
+/* Picture element for responsive images */
+picture {
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
 }
 
 /* Responsive Design */
