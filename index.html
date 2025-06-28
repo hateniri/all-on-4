@@ -69,8 +69,15 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
+        <section class="hero" style="position: relative; overflow: hidden;">
+            <img data-placeholder 
+                 data-width="1920" 
+                 data-height="1080" 
+                 data-label="ヒーロー背景画像"
+                 data-src="/images/home/hero-bg-desktop.webp"
+                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.3;"
+                 alt="All-on-4治療で笑顔を取り戻した患者様">
+            <div class="container" style="position: relative; z-index: 1;">
                 <h2>All-on-4で人生が変わった<br>私たちからのメッセージ</h2>
                 <p>このサイトはオールオンフォーで人生が変わった数名の有志で運営されています。<br>
                 歯でお悩みの方が一人でも多く救われるように情報発信と情報交換を行っています。</p>
@@ -86,14 +93,35 @@
                 <h2>All-on-4の特徴</h2>
                 <div class="feature-grid">
                     <div class="feature-card">
+                        <img data-placeholder 
+                             data-width="200" 
+                             data-height="200" 
+                             data-label="即日装着アイコン"
+                             data-src="/images/home/feature-icons/immediate-loading.svg"
+                             style="width: 100px; height: 100px; margin: 0 auto 1rem; display: block;"
+                             alt="即日装着アイコン">
                         <h3>即日で仮歯装着</h3>
                         <p>手術当日に仮歯を装着できるため、<br>見た目を気にせず日常生活を送れます。</p>
                     </div>
                     <div class="feature-card">
+                        <img data-placeholder 
+                             data-width="200" 
+                             data-height="200" 
+                             data-label="4本支えアイコン"
+                             data-src="/images/home/feature-icons/four-implants.svg"
+                             style="width: 100px; height: 100px; margin: 0 auto 1rem; display: block;"
+                             alt="4本のインプラント">
                         <h3>4本のインプラントで支える</h3>
                         <p>わずか4本のインプラントで全顎を支えるため、<br>従来の方法より費用と身体の負担が軽減されます。</p>
                     </div>
                     <div class="feature-card">
+                        <img data-placeholder 
+                             data-width="200" 
+                             data-height="200" 
+                             data-label="骨移植不要アイコン"
+                             data-src="/images/home/feature-icons/no-bone-graft.svg"
+                             style="width: 100px; height: 100px; margin: 0 auto 1rem; display: block;"
+                             alt="骨移植不要アイコン">
                         <h3>骨移植が不要な場合も</h3>
                         <p>傾斜埋入技術により、骨量が少ない方でも<br>骨移植なしで治療できる可能性があります。</p>
                     </div>
@@ -249,5 +277,6 @@
 
     <script src="/js/main.js"></script>
     <script src="/js/image-optimization.js"></script>
+    <script src="/js/placeholder-images.js"></script>
 </body>
 </html>

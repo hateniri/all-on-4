@@ -7,7 +7,13 @@ description: All-on-4治療の専門用語を患者さん向けにわかりや�
 
 <div class="glossary-intro">
 <div class="glossary-diagram">
-<img src="/images/glossary/all-on-4-diagram.jpg" alt="All-on-4の構造図" loading="lazy">
+<img data-placeholder 
+     data-width="1200" 
+     data-height="800" 
+     data-label="All-on-4構造図"
+     data-src="/images/glossary/all-on-4-diagram.jpg" 
+     alt="All-on-4の構造図" 
+     loading="lazy">
 <p class="diagram-caption">図：All-on-4では4本のインプラント（人工歯根）で片顎の全ての人工歯を支えます。奥歯のインプラントは骨のある部分に斜めに埋め込まれ、手術当日に仮の歯を固定することも可能です。</p>
 </div>
 
@@ -58,7 +64,13 @@ description: All-on-4治療の専門用語を患者さん向けにわかりや�
 ## 素材・構造関連
 
 <div class="glossary-diagram">
-<img src="/images/glossary/implant-structure.jpg" alt="インプラントの構造図" loading="lazy">
+<img data-placeholder 
+     data-width="800" 
+     data-height="600" 
+     data-label="インプラント構造説明図"
+     data-src="/images/glossary/implant-structure.jpg" 
+     alt="インプラントの構造図" 
+     loading="lazy">
 <p class="diagram-caption">図：歯科インプラントの基本的な構造（インプラント体・アバットメント・上部構造）。インプラント体（人工歯根）の上にアバットメント（連結部）を介して上部構造（人工歯）を装着する。All-on-4の場合も基本は同じですが、上部構造に人工の歯茎部分が含まれる点が特徴です。</p>
 </div>
 

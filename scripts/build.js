@@ -168,6 +168,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
         </div>
     </footer>
     <script src="/js/main.js"></script>
+    <script src="/js/placeholder-images.js"></script>
 </body>
 </html>`;
 
@@ -291,7 +292,13 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
                 ${hospitals.map(h => `
                     <div class="hospital-card">
                         <div class="hospital-image">
-                            <img src="${h.image || '/images/hospitals/hospital-placeholder.svg'}" alt="${h.name}" loading="lazy">
+                            <img data-placeholder
+                                 data-width="800"
+                                 data-height="600"
+                                 data-label="クリニック外観"
+                                 data-src="${h.image || '/images/hospitals/hospital-placeholder.jpg'}"
+                                 alt="${h.name}" 
+                                 loading="lazy">
                         </div>
                         <div class="hospital-content">
                             <h2>${h.name}</h2>
@@ -316,6 +323,7 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
     </footer>
     <script src="/js/main.js"></script>
     <script src="/js/hospital-filter.js"></script>
+    <script src="/js/placeholder-images.js"></script>
 </body>
 </html>`;
 

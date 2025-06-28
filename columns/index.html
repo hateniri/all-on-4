@@ -39,6 +39,15 @@
                 <div class="article-luxury-grid">
                     <article class="article-luxury-card">
                         <div class="article-category basic">基礎知識</div>
+                        <div class="article-image">
+                            <img data-placeholder
+                                 data-width="1200"
+                                 data-height="630"
+                                 data-label="All-on-4とは何か"
+                                 data-src="/images/columns/what-is-all-on-4-featured.jpg"
+                                 alt="All-on-4とは何か"
+                                 loading="lazy">
+                        </div>
                         <div class="article-content">
                             <h2><a href="/columns/what-is-all-on-4.html">All-on-4とは何か？従来のインプラントとの違い</a></h2>
                             <p class="article-excerpt">All-on-4は4本のインプラントで全顎を支える革新的な治療法。従来型と比べて治療期間が短く、費用も約30-50%削減可能です。</p>
@@ -288,6 +297,18 @@
             transition: all 0.3s ease;
             border-left: 4px solid var(--gold);
         }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .article-luxury-card:hover {
             transform: translateY(-3px);
@@ -456,5 +477,6 @@
     </style>
 
     <script src="/js/main.js"></script>
+    <script src="/js/placeholder-images.js"></script>
 </body>
 </html>
