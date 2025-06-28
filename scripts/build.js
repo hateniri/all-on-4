@@ -56,6 +56,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${data.title || 'All-on-4情報サイト'}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/luxury-style.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -94,16 +95,42 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
         </nav>
     </header>
     <main>
+        <!-- Article Hero -->
+        <section class="article-hero">
+            <div class="container">
+                <h1 class="article-title">${data.title || path.basename(mdPath, '.md')}</h1>
+                <div class="article-meta-hero">
+                    <span class="article-category">${data.category || 'コラム'}</span>
+                    <span class="article-date">${new Date().toLocaleDateString('ja-JP')}</span>
+                </div>
+            </div>
+        </section>
+        
         <div class="container">
-            <article class="content">
+            <article class="article-content-luxury">
                 ${htmlContent}
             </article>
         </div>
     </main>
     <footer>
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>サイト情報</h4>
+                    <ul>
+                        <li><a href="/about/">運営者情報</a></li>
+                        <li><a href="/privacy/">プライバシーポリシー</a></li>
+                        <li><a href="/terms/">利用規約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>All-on-4に関するご質問は<a href="/contact/">こちら</a></p>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 All-on-4 INFO. All rights reserved.</p>
+                <p class="footer-message">オールオンフォーで人生が変わった有志による運営</p>
             </div>
         </div>
     </footer>

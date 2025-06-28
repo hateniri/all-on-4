@@ -741,6 +741,107 @@ footer a:hover {
     margin: 1rem 0;
 }
 
+/* Article Pages */
+.article-hero {
+    background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.article-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.article-meta-hero {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-category {
+    background: var(--gold);
+    color: var(--midnight);
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 25px;
+}
+
+.article-date {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.article-content-luxury {
+    max-width: 800px;
+    margin: 3rem auto;
+    background: white;
+    padding: 3rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    border-left: 4px solid var(--gold);
+}
+
+.article-content-luxury h1 {
+    display: none; /* Hide duplicate h1 since we show it in hero */
+}
+
+.article-content-luxury h2 {
+    font-family: var(--font-serif);
+    color: var(--dark-gold);
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--champagne);
+}
+
+.article-content-luxury h3 {
+    font-family: var(--font-serif);
+    color: var(--midnight);
+    margin: 2rem 0 1rem;
+}
+
+.article-content-luxury p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--charcoal);
+}
+
+.article-content-luxury ul,
+.article-content-luxury ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.article-content-luxury li {
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+}
+
+.article-content-luxury strong {
+    color: var(--dark-gold);
+    font-weight: 600;
+}
+
+.article-content-luxury a {
+    color: var(--dark-gold);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.article-content-luxury a:hover {
+    color: var(--gold);
+}
+
 /* Responsive Luxury */
 @media (max-width: 1024px) {
     .hospital-grid {
