@@ -8,76 +8,40 @@ hospitals:
     region: 東京都
     address: 東京都港区南青山2-11-1
     website: https://tokyo-premium-implant.jp
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: true
-    stars: 4.8
-    review_count: 52
-    comment: 上下ジルコニア対応、即日固定も可能な医院、ザイゴマインプラント対応
-    director: 山田 太郎
-    director_title: 理事長・院長
-    director_wikipedia: https://ja.wikipedia.org/wiki/%E5%B1%B1%E7%94%B0%E5%A4%AA%E9%83%8E_(%E6%AD%AF%E7%A7%91%E5%8C%BB)
     image: /images/hospitals/tokyo_implant01.jpg
-    luxury_description: |
-      南青山の閑静な一等地に位置する、日本最高峰のインプラント治療センター。
-      世界トップクラスの設備と技術力で、国内外のVIPから絶大な信頼を得ています。
-      完全個室のプライベート空間で、最高級のホスピタリティをご提供いたします。
+    description: |
+      南青山に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   - id: tokyo_implant02
     name: 銀座オーラルクリニック
     region: 東京都
     address: 東京都中央区銀座4-3-9
     website: https://ginza-oral.com
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: false
-    stars: 4.6
-    review_count: 89
-    comment: 銀座の立地で通いやすい、セカンドオピニオン対応
-    director: 佐藤 次郎
-    director_title: 院長
-    director_wikipedia: null
     image: /images/hospitals/tokyo_implant02.jpg
-    luxury_description: |
-      銀座の中心部に位置し、世界の一流ブランドに囲まれた洗練された環境。
-      海外の最新技術をいち早く導入し、常に最先端の治療を提供しています。
-      エグゼクティブ専用フロアでは、完全なプライバシーを保証いたします。
+    description: |
+      銀座に位置する歯科クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   - id: tokyo_implant04
     name: All-on-4 Clinic 銀座
     region: 東京都
     address: 東京都中央区銀座6-9-6
     website: https://allon4-clinic-ginza.jp
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: true
-    stars: 4.9
-    review_count: 156
-    comment: All-on-4専門クリニック、ザイゴマインプラント対応で難症例も可能
-    director: 高橋 健一
-    director_title: 総院長
-    director_wikipedia: https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E5%81%A5%E4%B8%80_(%E6%AD%AF%E7%A7%91%E5%8C%BB)
     image: /images/hospitals/tokyo_implant04.jpg
-    luxury_description: |
-      日本初のAll-on-4専門クリニックとして、圧倒的な症例数と成功率を誇ります。
-      ハーバード大学での研修経験を持つ院長が、世界基準の治療を実現。
-      最難関のザイゴマインプラントも安心してお任せいただけます。
+    description: |
+      銀座に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   - id: tokyo_implant03
     name: 新宿インプラントセンター
     region: 東京都
     address: 東京都新宿区西新宿1-18-5
     website: https://shinjuku-implant.jp
-    allon4: true
-    zirconia: false
-    sedation: true
-    zygoma: false
-    stars: 4.3
-    review_count: 127
-    comment: 大規模センターで症例数豊富、分割払い対応
+    image: /images/hospitals/tokyo_implant03.jpg
+    description: |
+      新宿に位置するインプラント治療センター。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   # 神奈川県
   - id: kanagawa_implant01
@@ -85,26 +49,20 @@ hospitals:
     region: 神奈川県
     address: 神奈川県横浜市西区みなとみらい3-5-1
     website: https://yokohama-minato-implant.jp
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: false
-    stars: 4.7
-    review_count: 65
-    comment: みなとみらい駅直結、最新CT完備
+    image: /images/hospitals/kanagawa_implant01.jpg
+    description: |
+      横浜みなとみらいに位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   - id: kanagawa_implant02
     name: 湘南デンタルクリニック
     region: 神奈川県
     address: 神奈川県藤沢市南藤沢21-1
     website: https://shonan-dental.jp
-    allon4: true
-    zirconia: true
-    sedation: false
-    zygoma: false
-    stars: 4.5
-    review_count: 43
-    comment: 湘南エリアで実績多数、海外研修経験医師在籍
+    image: /images/hospitals/kanagawa_implant02.jpg
+    description: |
+      藤沢に位置する歯科クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   # 大阪府
   - id: osaka_implant01
@@ -112,34 +70,20 @@ hospitals:
     region: 大阪府
     address: 大阪府大阪市北区梅田1-11-4
     website: https://osaka-umeda-implant.jp
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: true
-    stars: 4.9
-    review_count: 112
-    comment: 関西最大級の施設、年間500症例以上、ザイゴマインプラント対応
-    director: 田中 一郎
-    director_title: センター長
-    director_wikipedia: https://ja.wikipedia.org/wiki/%E7%94%B0%E4%B8%AD%E4%B8%80%E9%83%8E_(%E6%AD%AF%E7%A7%91%E5%8C%BB)
     image: /images/hospitals/osaka_implant01.jpg
-    luxury_description: |
-      関西圏最大規模の設備と専門医チームを擁する、西日本のフラッグシップセンター。
-      年間500症例を超える豊富な実績で、どんな難症例にも対応可能です。
-      大阪駅直結の好立地で、遠方からの患者様にも最高の利便性を提供いたします。
+    description: |
+      大阪梅田に位置するインプラント治療センター。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   - id: osaka_implant02
     name: なんばオーラルケアクリニック
     region: 大阪府
     address: 大阪府大阪市中央区難波4-7-2
     website: https://namba-oral.jp
-    allon4: true
-    zirconia: false
-    sedation: true
-    zygoma: false
-    stars: 4.4
-    review_count: 76
-    comment: なんば駅徒歩3分、夜間診療対応
+    image: /images/hospitals/osaka_implant02.jpg
+    description: |
+      難波に位置する歯科クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   # 愛知県
   - id: aichi_implant01
@@ -147,13 +91,10 @@ hospitals:
     region: 愛知県
     address: 愛知県名古屋市中村区名駅3-28-12
     website: https://nagoya-central-implant.jp
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: false
-    stars: 4.7
-    review_count: 58
-    comment: 名古屋駅直結、東海地方最大規模
+    image: /images/hospitals/aichi_implant01.jpg
+    description: |
+      名古屋駅近くに位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   # 福岡県
   - id: fukuoka_implant01
@@ -161,26 +102,20 @@ hospitals:
     region: 福岡県
     address: 福岡県福岡市博多区博多駅前2-5-1
     website: https://hakata-implant.jp
-    allon4: true
-    zirconia: true
-    sedation: true
-    zygoma: true
-    stars: 4.6
-    review_count: 91
-    comment: 九州全域から患者来院、無料送迎サービス有、ザイゴマインプラント対応
+    image: /images/hospitals/fukuoka_implant01.jpg
+    description: |
+      博多駅前に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
   - id: fukuoka_implant02
     name: 天神デンタルインプラント
     region: 福岡県
     address: 福岡県福岡市中央区天神2-14-8
     website: https://tenjin-dental-implant.jp
-    allon4: true
-    zirconia: false
-    sedation: false
-    zygoma: false
-    stars: 4.2
-    review_count: 34
-    comment: 天神エリアでアクセス良好、土日診療可
+    image: /images/hospitals/fukuoka_implant02.jpg
+    description: |
+      天神に位置するインプラント治療クリニック。
+      詳細な治療内容については、直接医院にお問い合わせください。
 
 # データ構造説明
 # id: 一意識別子（地域_implant連番）
@@ -188,10 +123,5 @@ hospitals:
 # region: 都道府県
 # address: 住所
 # website: 公式サイトURL
-# allon4: All-on-4対応可否
-# zirconia: ジルコニア対応可否
-# sedation: 静脈内鎮静法対応可否
-# zygoma: ザイゴマインプラント対応可否
-# stars: 評価（5点満点）
-# review_count: レビュー数
-# comment: 特徴・備考
+# image: 医院画像パス
+# description: 簡潔な説明文（中立的な表現）

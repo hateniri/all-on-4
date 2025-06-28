@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All-on-4に関するご質問、医院掲載のご希望など、お気軽にお問い合わせください。">
+    <meta name="description" content="All-on-4に関するご質問、医院掲載のご希望、ユーザー会参加など、お気軽にお問い合わせください。">
     <title>お問い合わせ｜All-on-4情報サイト</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/luxury-style.css">
 </head>
 <body>
     <header>
@@ -24,95 +25,125 @@
     </header>
 
     <main>
-        <div class="container">
-            <h1>お問い合わせ</h1>
-            <p class="lead">All-on-4に関するご質問、医院掲載のご希望、その他お問い合わせは以下のフォームよりお送りください。</p>
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">お問い合わせ</h1>
+                <p class="page-subtitle">All-on-4に関するご質問、医院掲載、ユーザー会参加など、何でもお気軽にご相談ください</p>
+            </div>
+        </section>
 
-            <div class="contact-grid">
+        <div class="container">
+            <div class="contact-luxury-grid">
                 <div class="contact-form-section">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
+                    <div class="form-header">
+                        <h2>お問い合わせフォーム</h2>
+                        <p>専門スタッフが丁寧にお答えいたします</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-luxury-form">
+                        <div class="form-luxury-group">
                             <label for="inquiry-type">お問い合わせ種別 <span class="required">*</span></label>
                             <select id="inquiry-type" name="inquiry-type" required>
                                 <option value="">選択してください</option>
                                 <option value="general">一般的なご質問</option>
                                 <option value="treatment">治療に関するご相談</option>
                                 <option value="hospital">医院掲載のご希望</option>
+                                <option value="user-group">ユーザー会について</option>
                                 <option value="correction">情報の修正依頼</option>
                                 <option value="other">その他</option>
                             </select>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-luxury-group">
                             <label for="name">お名前 <span class="required">*</span></label>
                             <input type="text" id="name" name="name" required>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-luxury-group">
                             <label for="email">メールアドレス <span class="required">*</span></label>
                             <input type="email" id="email" name="email" required>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-luxury-group">
                             <label for="phone">電話番号</label>
                             <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-luxury-group">
                             <label for="subject">件名 <span class="required">*</span></label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-luxury-group">
                             <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="8" required></textarea>
+                            <textarea id="message" name="message" rows="8" required placeholder="具体的な内容をご記入ください"></textarea>
                         </div>
 
-                        <div class="form-group checkbox-group">
-                            <label>
+                        <div class="form-luxury-group checkbox-group">
+                            <label class="checkbox-luxury">
                                 <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
                                 <a href="/privacy/" target="_blank">プライバシーポリシー</a>に同意する
                             </label>
                         </div>
 
-                        <div class="form-submit">
-                            <button type="submit" class="btn-primary">送信する</button>
+                        <div class="form-submit-luxury">
+                            <button type="submit" class="btn-gold-submit">
+                                <span>送信する</span>
+                            </button>
                         </div>
                     </form>
 
-                    <div class="form-note">
+                    <div class="form-note-luxury">
                         <p><span class="required">*</span> は必須項目です</p>
-                        <p>お問い合わせいただいた内容は、3営業日以内に返信いたします。</p>
+                        <p>お問い合わせいただいた内容は、<strong>3営業日以内</strong>に返信いたします。</p>
                     </div>
                 </div>
 
                 <div class="contact-info-section">
-                    <h2>お問い合わせについて</h2>
-                    
-                    <div class="info-box">
-                        <h3>🏥 医院掲載をご希望の方へ</h3>
+                    <div class="info-luxury-box primary">
+                        <div class="info-icon">🏥</div>
+                        <h3>医院掲載をご希望の方へ</h3>
                         <p>All-on-4対応医院の掲載は無料です。以下の情報をお知らせください：</p>
                         <ul>
-                            <li>医院名・住所</li>
+                            <li>医院名・住所・連絡先</li>
                             <li>公式サイトURL</li>
-                            <li>All-on-4の症例数</li>
-                            <li>対応可能な治療（ジルコニア、静脈内鎮静法など）</li>
+                            <li>All-on-4の症例数・実績</li>
+                            <li>院長・スタッフ情報</li>
                             <li>特徴・アピールポイント</li>
+                            <li>施設写真（外観・内装）</li>
                         </ul>
                     </div>
 
-                    <div class="info-box">
-                        <h3>📧 返信について</h3>
-                        <p>通常3営業日以内に返信いたします。1週間経っても返信がない場合は、メールアドレスの入力ミスか、迷惑メールフォルダをご確認ください。</p>
+                    <div class="info-luxury-box secondary">
+                        <div class="info-icon">👥</div>
+                        <h3>All-on-4ユーザー会</h3>
+                        <p>治療経験者同士の情報交換・座談会・懇親会を開催しています。</p>
+                        <ul>
+                            <li>月1回の座談会（東京・大阪）</li>
+                            <li>年2回の懇親会・食事会</li>
+                            <li>メンテナンス情報の共有</li>
+                            <li>治療体験談の交換</li>
+                        </ul>
+                        <p class="highlight">参加費無料・匿名参加OK</p>
                     </div>
 
-                    <div class="info-box">
-                        <h3>💡 よくあるご質問</h3>
-                        <p>お問い合わせの前に、<a href="/faq/">よくある質問ページ</a>もご確認ください。多くの疑問が解決できるかもしれません。</p>
+                    <div class="info-luxury-box accent">
+                        <div class="info-icon">📧</div>
+                        <h3>返信について</h3>
+                        <p>通常<strong>3営業日以内</strong>に返信いたします。1週間経っても返信がない場合は、メールアドレスの入力ミスか、迷惑メールフォルダをご確認ください。</p>
                     </div>
 
-                    <div class="info-box warning">
-                        <h3>⚠️ ご注意</h3>
+                    <div class="info-luxury-box">
+                        <div class="info-icon">💡</div>
+                        <h3>よくあるご質問</h3>
+                        <p>お問い合わせの前に、<a href="/faq/" class="gold-link">よくある質問ページ</a>もご確認ください。多くの疑問が解決できるかもしれません。</p>
+                    </div>
+
+                    <div class="info-luxury-box warning">
+                        <div class="info-icon">⚠️</div>
+                        <h3>ご注意</h3>
                         <p>当サイトは情報提供を目的としており、医療行為や診断は行っておりません。具体的な治療については、必ず歯科医師にご相談ください。</p>
                     </div>
                 </div>
@@ -122,6 +153,20 @@
 
     <footer>
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>サイト情報</h4>
+                    <ul>
+                        <li><a href="/about/">運営者情報</a></li>
+                        <li><a href="/privacy/">プライバシーポリシー</a></li>
+                        <li><a href="/terms/">利用規約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>All-on-4に関するご質問は<a href="/contact/">こちら</a></p>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 All-on-4 INFO. All rights reserved.</p>
             </div>
@@ -129,135 +174,287 @@
     </footer>
 
     <style>
-        .lead {
-            font-size: 1.1rem;
-            color: #666;
+        .contact-hero {
+            background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .contact-luxury-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 3rem;
+            margin-top: -2rem;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: var(--pearl);
+            border-radius: 8px 8px 0 0;
+        }
+
+        .form-header h2 {
+            font-family: var(--font-serif);
+            color: var(--dark-gold);
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .form-header p {
+            color: var(--charcoal);
+            font-size: 1rem;
+        }
+
+        .contact-luxury-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--gold);
+        }
+
+        .form-luxury-group {
             margin-bottom: 2rem;
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
+        .form-luxury-group label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #333;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: var(--midnight);
+            font-size: 1rem;
         }
 
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
+        .form-luxury-group input,
+        .form-luxury-group select,
+        .form-luxury-group textarea {
             width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 1rem;
+            border: 2px solid var(--champagne);
+            border-radius: 5px;
             font-size: 1rem;
             font-family: inherit;
+            transition: all 0.3s ease;
+            background: var(--ivory);
         }
 
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
+        .form-luxury-group input:focus,
+        .form-luxury-group select:focus,
+        .form-luxury-group textarea:focus {
             outline: none;
-            border-color: #0066cc;
+            border-color: var(--gold);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
         }
 
         .required {
             color: #e74c3c;
+            font-weight: bold;
         }
 
         .checkbox-group {
             display: flex;
+            align-items: flex-start;
+        }
+
+        .checkbox-luxury {
+            display: flex;
             align-items: center;
-        }
-
-        .checkbox-group input[type="checkbox"] {
-            width: auto;
-            margin-right: 0.5rem;
-        }
-
-        .form-submit {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .form-submit .btn-primary {
-            background: #0066cc;
-            color: white;
-            padding: 1rem 3rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            font-weight: bold;
             cursor: pointer;
-            transition: background 0.2s;
+            position: relative;
+            padding-left: 2rem;
         }
 
-        .form-submit .btn-primary:hover {
-            background: #0052a3;
+        .checkbox-luxury input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            width: 0;
+            height: 0;
         }
 
-        .form-note {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #666;
+        .checkmark {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            height: 1.2rem;
+            width: 1.2rem;
+            background-color: var(--champagne);
+            border: 2px solid var(--gold);
+            border-radius: 3px;
+            transition: all 0.3s ease;
         }
 
-        .info-box {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 1.5rem;
+        .checkbox-luxury:hover input ~ .checkmark {
+            background-color: var(--gold);
         }
 
-        .info-box h3 {
-            margin-bottom: 1rem;
-            color: #0066cc;
+        .checkbox-luxury input:checked ~ .checkmark {
+            background-color: var(--gold);
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .checkbox-luxury input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        .checkbox-luxury .checkmark:after {
+            left: 0.3rem;
+            top: 0.1rem;
+            width: 0.3rem;
+            height: 0.6rem;
+            border: solid var(--midnight);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        .form-submit-luxury {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .btn-gold-submit {
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: var(--midnight);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
             font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
 
-        .info-box ul {
-            margin-left: 1.5rem;
-            color: #666;
+        .btn-gold-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
         }
 
-        .info-box.warning {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
+        .form-note-luxury {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--champagne);
+            border-radius: 5px;
+            border: 1px solid var(--gold);
         }
 
-        .info-box.warning h3 {
-            color: #856404;
+        .form-note-luxury p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--midnight);
         }
 
-        .nav-menu .active {
-            color: #0066cc;
-            font-weight: bold;
+        .info-luxury-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        .info-luxury-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .info-luxury-box.primary {
+            border-left-color: var(--dark-gold);
+        }
+
+        .info-luxury-box.secondary {
+            border-left-color: #2E8B57;
+            background: linear-gradient(135deg, white, #f0fdf4);
+        }
+
+        .info-luxury-box.accent {
+            border-left-color: #4169E1;
+        }
+
+        .info-luxury-box.warning {
+            background: #fff8e1;
+            border-left-color: #ff9800;
+        }
+
+        .info-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .info-luxury-box h3 {
+            font-family: var(--font-serif);
+            color: var(--dark-gold);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-luxury-box.warning h3 {
+            color: #f57c00;
+        }
+
+        .info-luxury-box ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .info-luxury-box li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .gold-link {
+            color: var(--dark-gold);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: var(--gold);
+            color: var(--midnight);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .contact-luxury-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
         }
 
         @media (max-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
+            .contact-luxury-form {
+                padding: 1.5rem;
+            }
+            
+            .form-luxury-group input,
+            .form-luxury-group select,
+            .form-luxury-group textarea {
+                padding: 0.75rem;
+            }
+            
+            .btn-gold-submit {
+                padding: 1rem 2rem;
+                font-size: 1rem;
             }
         }
     </style>
@@ -279,6 +476,28 @@
             
             // フォームをリセット
             this.reset();
+        });
+
+        // お問い合わせ種別によってメッセージのプレースホルダーを変更
+        document.getElementById('inquiry-type').addEventListener('change', function() {
+            const messageField = document.getElementById('message');
+            const selectedValue = this.value;
+            
+            let placeholder = '具体的な内容をご記入ください';
+            
+            switch(selectedValue) {
+                case 'hospital':
+                    placeholder = '医院名、住所、公式サイトURL、症例数、特徴などをご記入ください';
+                    break;
+                case 'user-group':
+                    placeholder = '参加希望の地域、治療時期、ご質問などをご記入ください';
+                    break;
+                case 'treatment':
+                    placeholder = '治療に関するご質問、お悩みなどをご記入ください（※医療相談は行っておりません）';
+                    break;
+            }
+            
+            messageField.placeholder = placeholder;
         });
     </script>
 </body>
