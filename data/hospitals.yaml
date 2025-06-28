@@ -11,9 +11,10 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: true
+    zygoma: true
     stars: 4.8
     review_count: 52
-    comment: 上下ジルコニア対応、即日固定も可能な医院
+    comment: 上下ジルコニア対応、即日固定も可能な医院、ザイゴマインプラント対応
 
   - id: tokyo_implant02
     name: 銀座オーラルクリニック
@@ -23,9 +24,23 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: true
+    zygoma: false
     stars: 4.6
     review_count: 89
     comment: 銀座の立地で通いやすい、セカンドオピニオン対応
+
+  - id: tokyo_implant04
+    name: All-on-4 Clinic 銀座
+    region: 東京都
+    address: 東京都中央区銀座6-9-6
+    website: https://allon4-clinic-ginza.jp
+    allon4: true
+    zirconia: true
+    sedation: true
+    zygoma: true
+    stars: 4.9
+    review_count: 156
+    comment: All-on-4専門クリニック、ザイゴマインプラント対応で難症例も可能
 
   - id: tokyo_implant03
     name: 新宿インプラントセンター
@@ -35,6 +50,7 @@ hospitals:
     allon4: true
     zirconia: false
     sedation: true
+    zygoma: false
     stars: 4.3
     review_count: 127
     comment: 大規模センターで症例数豊富、分割払い対応
@@ -48,6 +64,7 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: true
+    zygoma: false
     stars: 4.7
     review_count: 65
     comment: みなとみらい駅直結、最新CT完備
@@ -60,6 +77,7 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: false
+    zygoma: false
     stars: 4.5
     review_count: 43
     comment: 湘南エリアで実績多数、海外研修経験医師在籍
@@ -73,9 +91,10 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: true
+    zygoma: true
     stars: 4.9
     review_count: 112
-    comment: 関西最大級の施設、年間500症例以上
+    comment: 関西最大級の施設、年間500症例以上、ザイゴマインプラント対応
 
   - id: osaka_implant02
     name: なんばオーラルケアクリニック
@@ -85,6 +104,7 @@ hospitals:
     allon4: true
     zirconia: false
     sedation: true
+    zygoma: false
     stars: 4.4
     review_count: 76
     comment: なんば駅徒歩3分、夜間診療対応
@@ -98,6 +118,7 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: true
+    zygoma: false
     stars: 4.7
     review_count: 58
     comment: 名古屋駅直結、東海地方最大規模
@@ -111,9 +132,10 @@ hospitals:
     allon4: true
     zirconia: true
     sedation: true
+    zygoma: true
     stars: 4.6
     review_count: 91
-    comment: 九州全域から患者来院、無料送迎サービス有
+    comment: 九州全域から患者来院、無料送迎サービス有、ザイゴマインプラント対応
 
   - id: fukuoka_implant02
     name: 天神デンタルインプラント
@@ -123,6 +145,7 @@ hospitals:
     allon4: true
     zirconia: false
     sedation: false
+    zygoma: false
     stars: 4.2
     review_count: 34
     comment: 天神エリアでアクセス良好、土日診療可
@@ -136,6 +159,7 @@ hospitals:
 # allon4: All-on-4対応可否
 # zirconia: ジルコニア対応可否
 # sedation: 静脈内鎮静法対応可否
+# zygoma: ザイゴマインプラント対応可否
 # stars: 評価（5点満点）
 # review_count: レビュー数
 # comment: 特徴・備考

@@ -189,6 +189,7 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
                             ${h.allon4 ? '✓ All-on-4対応' : ''}
                             ${h.zirconia ? '✓ ジルコニア対応' : ''}
                             ${h.sedation ? '✓ 静脈内鎮静法対応' : ''}
+                            ${h.zygoma ? '✓ ザイゴマインプラント対応' : ''}
                         </p>
                         <p class="rating">評価: ⭐${h.stars} (${h.review_count}件のレビュー)</p>
                         <p class="comment">${h.comment}</p>
