@@ -543,6 +543,37 @@
     color: #999;
     font-size: 0.9rem;
     font-style: italic;
+    width: 100%;
+}
+
+.ad-link {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.ad-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* 広告表示時のプレースホルダースタイルをリセット */
+.ad-placeholder:has(.ad-link) {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.ad-section:has(.ad-link) {
+    padding: 0;
+    min-height: auto;
+    background: transparent;
+    border: none;
+}
+
+.ad-section:has(.ad-link)::before {
+    display: none;
 }
 
 .sidebar-ad {

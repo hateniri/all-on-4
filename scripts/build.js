@@ -196,6 +196,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     </footer>
     <script src="/js/main.js"></script>
     <script src="/js/placeholder-images.js"></script>
+    <script src="/js/ads.js"></script>
 </body>
 </html>`;
 
