@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All-on-4治療後のおすすめ口内ケアグッズ。実際に使用している患者視点で厳選した商品を紹介します。">
+    <title>おすすめケアグッズ｜All-on-4情報サイト</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/luxury-style.css">
+    <link rel="canonical" href="https://all-on-4.vercel.app/care-goods/">
+    
+    <!-- OGP Tags -->
+    <meta property="og:title" content="All-on-4患者おすすめケアグッズ">
+    <meta property="og:description" content="All-on-4治療後のおすすめ口内ケアグッズ。実際に使用している患者視点で厳選した商品を紹介します。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://all-on-4.vercel.app/care-goods/">
+    
+    <style>
+        .care-goods-hero {
+            background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
+            color: var(--ivory);
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        
+        .care-intro {
+            background: var(--light-bg);
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .care-intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .care-intro h2 {
+            color: var(--dark-gold);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 20px;
+        }
+        
+        .product-content {
+            padding: 2rem;
+        }
+        
+        .product-category {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        .product-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        
+        .product-features li:before {
+            content: "✓";
+            color: var(--dark-gold);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        
+        .price-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        .price-amount {
+            font-size: 1.5rem;
+            color: var(--dark-gold);
+            font-weight: bold;
+        }
+        
+        .product-link {
+            display: block;
+            background: var(--dark-gold);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .product-link:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+        }
+        
+        .patient-voice {
+            background: #fdf8f0;
+            border-left: 4px solid var(--dark-gold);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .patient-voice h4 {
+            color: var(--dark-gold);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .patient-voice p {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .care-tips {
+            background: var(--light-bg);
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .tip-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .tip-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tip-title {
+            color: var(--charcoal);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tip-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .affiliate-notice {
+            background: #f0f0f0;
+            padding: 1rem;
+            margin: 3rem 0;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="/">All-on-4 INFO</a></h1>
+                <ul class="nav-menu">
+                    <li><a href="/">ホーム</a></li>
+                    <li><a href="/columns/">コラム</a></li>
+                    <li><a href="/hospitals/">病院検索</a></li>
+                    <li><a href="/glossary/">用語集</a></li>
+                    <li><a href="/faq/">よくある質問</a></li>
+                    <li><a href="/care-goods/" class="active">ケアグッズ</a></li>
+                    <li><a href="/contact/">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="care-goods-hero">
+            <div class="container">
+                <h1 class="page-title">患者が選ぶ、おすすめケアグッズ</h1>
+                <p class="page-subtitle">All-on-4治療後の快適な生活をサポートする厳選アイテム</p>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="care-intro">
+            <div class="container">
+                <div class="care-intro-content">
+                    <h2>実体験から選んだ、本当に使えるアイテムたち</h2>
+                    <p>All-on-4治療を受けた私たちが、実際に使って良かった口内ケアグッズをご紹介します。<br>
+                    治療後のメンテナンスは非常に重要。適切なケアグッズを使うことで、<br>
+                    インプラントを長持ちさせ、快適な毎日を送ることができます。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1: Panasonic Doltz -->
+                <article class="product-card">
+                    <img src="/images/care-goods/panasonic-doltz.webp" alt="パナソニック ジェットウォッシャー ドルツ" class="product-image">
+                    <div class="product-content">
+                        <span class="product-category">口腔洗浄器</span>
+                        <h3 class="product-title">パナソニック ジェットウォッシャー ドルツ EW-CDJ74-W</h3>
+                        <p class="product-description">
+                            強力な水流で、歯ブラシでは届かない隙間の汚れもしっかり除去。All-on-4の清掃には必須アイテムです。
+                        </p>
+                        <ul class="product-features">
+                            <li>超音波水流で歯周ポケットまで洗浄</li>
+                            <li>10段階の水圧調整可能</li>
+                            <li>大容量タンクで連続使用可能</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price-label">参考価格</span>
+                            <span class="price-amount">¥15,000前後</span>
+                        </div>
+                        <a href="https://www.amazon.co.jp/dp/B093BVJPF8?tag=guildarts-22" target="_blank" rel="nofollow noopener" class="product-link">
+                            Amazonで詳細を見る
+                        </a>
+                        <div class="patient-voice">
+                            <h4>患者の声</h4>
+                            <p>「All-on-4にしてから毎日使っています。歯茎との境目もスッキリ洗えて、口臭も気にならなくなりました。」</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2: Oral Blue -->
+                <article class="product-card">
+                    <img src="/images/care-goods/oralblue.webp" alt="薬用マウスウォッシュ オーラルブルー" class="product-image">
+                    <div class="product-content">
+                        <span class="product-category">マウスウォッシュ</span>
+                        <h3 class="product-title">薬用マウスウォッシュ オーラルブルー100ml</h3>
+                        <p class="product-description">
+                            クロルヘキシジン配合で殺菌効果が高く、インプラント周囲炎の予防に効果的。爽やかなペパーミント味。
+                        </p>
+                        <ul class="product-features">
+                            <li>医薬部外品で確かな効果</li>
+                            <li>プロポリス配合で歯茎ケア</li>
+                            <li>低刺激で毎日使える</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price-label">参考価格</span>
+                            <span class="price-amount">¥1,980</span>
+                        </div>
+                        <a href="https://www.amazon.co.jp/dp/B0BQ1RDLJP?tag=guildarts-22" target="_blank" rel="nofollow noopener" class="product-link">
+                            Amazonで詳細を見る
+                        </a>
+                        <div class="patient-voice">
+                            <h4>患者の声</h4>
+                            <p>「歯科医院で勧められて使い始めました。刺激が少ないのに、使用後の爽快感が長続きします。」</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3: Muji Sheet -->
+                <article class="product-card">
+                    <img src="/images/care-goods/muji-sheet.webp" alt="無印良品 指型歯みがきシート" class="product-image">
+                    <div class="product-content">
+                        <span class="product-category">携帯ケア</span>
+                        <h3 class="product-title">無印良品 指型歯みがきシート 12枚入</h3>
+                        <p class="product-description">
+                            外出先でも手軽に口内ケアができる便利アイテム。水がなくても使えるので、旅行や外食後に重宝します。
+                        </p>
+                        <ul class="product-features">
+                            <li>指にはめて使える簡単設計</li>
+                            <li>コンパクトで持ち運び便利</li>
+                            <li>キシリトール配合</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price-label">参考価格</span>
+                            <span class="price-amount">¥290</span>
+                        </div>
+                        <a href="https://www.amazon.co.jp/dp/B09RMHJR7W?tag=guildarts-22" target="_blank" rel="nofollow noopener" class="product-link">
+                            Amazonで詳細を見る
+                        </a>
+                        <div class="patient-voice">
+                            <h4>患者の声</h4>
+                            <p>「ランチ後にサッと使えて便利。All-on-4でも安心して使えます。」</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4: Super Floss -->
+                <article class="product-card">
+                    <img src="/images/care-goods/superfloss.webp" alt="スーパーフロス インプラント用" class="product-image">
+                    <div class="product-content">
+                        <span class="product-category">フロス</span>
+                        <h3 class="product-title">スーパーフロス インプラント用（50本入）</h3>
+                        <p class="product-description">
+                            インプラント専用設計のフロス。先端が強化されていて、狭い隙間にも通しやすく、効果的に清掃できます。
+                        </p>
+                        <ul class="product-features">
+                            <li>288本繊維で汚れをキャッチ</li>
+                            <li>抗菌成分配合</li>
+                            <li>インプラント周囲の清掃に最適</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price-label">参考価格</span>
+                            <span class="price-amount">¥1,280</span>
+                        </div>
+                        <a href="https://www.amazon.co.jp/dp/B0DQM7PT99?tag=guildarts-22" target="_blank" rel="nofollow noopener" class="product-link">
+                            Amazonで詳細を見る
+                        </a>
+                        <div class="patient-voice">
+                            <h4>患者の声</h4>
+                            <p>「普通のフロスより太くて丈夫。All-on-4の隙間掃除に欠かせません。」</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 5: Tongue Cleaner -->
+                <article class="product-card">
+                    <img src="/images/care-goods/tongue-cleaner.webp" alt="舌クリーナー ブラシ&ヘラタイプ" class="product-image">
+                    <div class="product-content">
+                        <span class="product-category">舌ケア</span>
+                        <h3 class="product-title">舌クリーナー ブラシ&ヘラタイプ</h3>
+                        <p class="product-description">
+                            舌苔を効率的に除去し、口臭予防に効果的。ブラシとヘラの2way仕様で、お好みの使い方ができます。
+                        </p>
+                        <ul class="product-features">
+                            <li>ソフトブラシで優しくケア</li>
+                            <li>ヘラ面でしっかり除去</li>
+                            <li>抗菌加工済み</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price-label">参考価格</span>
+                            <span class="price-amount">¥550</span>
+                        </div>
+                        <a href="https://www.amazon.co.jp/dp/B0042P6FSK?tag=guildarts-22" target="_blank" rel="nofollow noopener" class="product-link">
+                            Amazonで詳細を見る
+                        </a>
+                        <div class="patient-voice">
+                            <h4>患者の声</h4>
+                            <p>「All-on-4にしてから舌の清掃も意識するようになりました。口臭が激減しました。」</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 6: HandyBio -->
+                <article class="product-card">
+                    <img src="/images/care-goods/handybio.webp" alt="タンクレス ジェットウォッシャー HandyBio" class="product-image">
+                    <div class="product-content">
+                        <span class="product-category">携帯型洗浄器</span>
+                        <h3 class="product-title">タンクレス ジェットウォッシャー HandyBio</h3>
+                        <p class="product-description">
+                            コンパクトな携帯型なのに強力な洗浄力。旅行や出張先でも、いつもと同じケアができます。
+                        </p>
+                        <ul class="product-features">
+                            <li>充電式でコードレス</li>
+                            <li>タンクレスで軽量設計</li>
+                            <li>現役歯科医師監修</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="price-label">参考価格</span>
+                            <span class="price-amount">¥6,980</span>
+                        </div>
+                        <a href="https://www.amazon.co.jp/dp/B0BNL2ND2F?tag=guildarts-22" target="_blank" rel="nofollow noopener" class="product-link">
+                            Amazonで詳細を見る
+                        </a>
+                        <div class="patient-voice">
+                            <h4>患者の声</h4>
+                            <p>「出張が多いので購入。ホテルでもしっかりケアできて安心です。」</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Care Tips Section -->
+            <section class="care-tips">
+                <div class="container">
+                    <h2 class="section-title">All-on-4のケアポイント</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">🦷</div>
+                            <h3 class="tip-title">毎日の基本ケア</h3>
+                            <p class="tip-description">
+                                朝晩の歯磨きは必須。特に就寝前は念入りに。ジェットウォッシャーとの併用がおすすめです。
+                            </p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">💧</div>
+                            <h3 class="tip-title">水流洗浄の重要性</h3>
+                            <p class="tip-description">
+                                All-on-4と歯茎の境目は汚れが溜まりやすい。水流洗浄で隙間の汚れをしっかり除去しましょう。
+                            </p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">🏥</div>
+                            <h3 class="tip-title">定期メンテナンス</h3>
+                            <p class="tip-description">
+                                3～6ヶ月ごとの歯科医院でのメンテナンスは必須。プロのケアと自宅ケアの両立が大切です。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Affiliate Notice -->
+            <div class="affiliate-notice">
+                <p>※当サイトはAmazonアソシエイトプログラムに参加しています。商品購入により、サイト運営費の一部を賄わせていただいております。</p>
+            </div>
+
+            <!-- Ad Section -->
+            <div class="ad-section">
+                <div class="ad-placeholder">
+                    <p>広告スペース</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>サイト情報</h4>
+                    <ul>
+                        <li><a href="/about/">運営者情報</a></li>
+                        <li><a href="/privacy/">プライバシーポリシー</a></li>
+                        <li><a href="/terms/">利用規約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>All-on-4に関するご質問は<a href="/contact/">こちら</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 All-on-4 INFO. All rights reserved.</p>
+                <p class="footer-message">オールオンフォーで人生が変わった有志による運営</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

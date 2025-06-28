@@ -110,6 +110,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
                     <li><a href="/hospitals/">病院検索</a></li>
                     <li><a href="/glossary/">用語集</a></li>
                     <li><a href="/faq/">よくある質問</a></li>
+                    <li><a href="/care-goods/">ケアグッズ</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
             </div>
@@ -343,6 +344,7 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
                     <li><a href="/hospitals/">病院検索</a></li>
                     <li><a href="/glossary/">用語集</a></li>
                     <li><a href="/faq/">よくある質問</a></li>
+                    <li><a href="/care-goods/">ケアグッズ</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
             </div>
