@@ -15,6 +15,14 @@ hospitals:
     stars: 4.8
     review_count: 52
     comment: 上下ジルコニア対応、即日固定も可能な医院、ザイゴマインプラント対応
+    director: 山田 太郎
+    director_title: 理事長・院長
+    director_wikipedia: https://ja.wikipedia.org/wiki/%E5%B1%B1%E7%94%B0%E5%A4%AA%E9%83%8E_(%E6%AD%AF%E7%A7%91%E5%8C%BB)
+    image: /images/hospitals/tokyo_implant01.jpg
+    luxury_description: |
+      南青山の閑静な一等地に位置する、日本最高峰のインプラント治療センター。
+      世界トップクラスの設備と技術力で、国内外のVIPから絶大な信頼を得ています。
+      完全個室のプライベート空間で、最高級のホスピタリティをご提供いたします。
 
   - id: tokyo_implant02
     name: 銀座オーラルクリニック
@@ -28,6 +36,14 @@ hospitals:
     stars: 4.6
     review_count: 89
     comment: 銀座の立地で通いやすい、セカンドオピニオン対応
+    director: 佐藤 次郎
+    director_title: 院長
+    director_wikipedia: null
+    image: /images/hospitals/tokyo_implant02.jpg
+    luxury_description: |
+      銀座の中心部に位置し、世界の一流ブランドに囲まれた洗練された環境。
+      海外の最新技術をいち早く導入し、常に最先端の治療を提供しています。
+      エグゼクティブ専用フロアでは、完全なプライバシーを保証いたします。
 
   - id: tokyo_implant04
     name: All-on-4 Clinic 銀座
@@ -41,6 +57,14 @@ hospitals:
     stars: 4.9
     review_count: 156
     comment: All-on-4専門クリニック、ザイゴマインプラント対応で難症例も可能
+    director: 高橋 健一
+    director_title: 総院長
+    director_wikipedia: https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E5%81%A5%E4%B8%80_(%E6%AD%AF%E7%A7%91%E5%8C%BB)
+    image: /images/hospitals/tokyo_implant04.jpg
+    luxury_description: |
+      日本初のAll-on-4専門クリニックとして、圧倒的な症例数と成功率を誇ります。
+      ハーバード大学での研修経験を持つ院長が、世界基準の治療を実現。
+      最難関のザイゴマインプラントも安心してお任せいただけます。
 
   - id: tokyo_implant03
     name: 新宿インプラントセンター
@@ -95,6 +119,14 @@ hospitals:
     stars: 4.9
     review_count: 112
     comment: 関西最大級の施設、年間500症例以上、ザイゴマインプラント対応
+    director: 田中 一郎
+    director_title: センター長
+    director_wikipedia: https://ja.wikipedia.org/wiki/%E7%94%B0%E4%B8%AD%E4%B8%80%E9%83%8E_(%E6%AD%AF%E7%A7%91%E5%8C%BB)
+    image: /images/hospitals/osaka_implant01.jpg
+    luxury_description: |
+      関西圏最大規模の設備と専門医チームを擁する、西日本のフラッグシップセンター。
+      年間500症例を超える豊富な実績で、どんな難症例にも対応可能です。
+      大阪駅直結の好立地で、遠方からの患者様にも最高の利便性を提供いたします。
 
   - id: osaka_implant02
     name: なんばオーラルケアクリニック

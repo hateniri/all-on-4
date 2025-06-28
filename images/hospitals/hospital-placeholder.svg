@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8961F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7E7CE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Building Silhouette -->
+  <rect x="200" y="300" width="800" height="400" fill="#0C1021" opacity="0.1"/>
+  <rect x="300" y="200" width="600" height="500" fill="#0C1021" opacity="0.15"/>
+  <rect x="400" y="150" width="400" height="550" fill="#0C1021" opacity="0.2"/>
+  
+  <!-- Windows -->
+  <g opacity="0.3">
+    <rect x="350" y="250" width="80" height="100" fill="#D4AF37"/>
+    <rect x="470" y="250" width="80" height="100" fill="#D4AF37"/>
+    <rect x="590" y="250" width="80" height="100" fill="#D4AF37"/>
+    <rect x="710" y="250" width="80" height="100" fill="#D4AF37"/>
+    
+    <rect x="350" y="380" width="80" height="100" fill="#D4AF37"/>
+    <rect x="470" y="380" width="80" height="100" fill="#D4AF37"/>
+    <rect x="590" y="380" width="80" height="100" fill="#D4AF37"/>
+    <rect x="710" y="380" width="80" height="100" fill="#D4AF37"/>
+  </g>
+  
+  <!-- Luxury Medical Symbol -->
+  <g transform="translate(600, 400)">
+    <circle cx="0" cy="0" r="120" fill="white" opacity="0.9"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+    
+    <!-- Medical Cross -->
+    <rect x="-40" y="-10" width="80" height="20" fill="url(#goldGradient)"/>
+    <rect x="-10" y="-40" width="20" height="80" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Premium Text -->
+  <text x="600" y="600" font-family="Georgia, serif" font-size="48" fill="#D4AF37" text-anchor="middle" font-weight="bold">PREMIUM CLINIC</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="80" fill="#D4AF37" opacity="0.1"/>
+  <circle cx="1100" cy="700" r="100" fill="#D4AF37" opacity="0.1"/>
+</svg>
