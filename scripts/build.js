@@ -72,6 +72,13 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${data.title || 'All-on-4情報サイト'}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/images/favicon-16x16.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/images/favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+    
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/luxury-style.css">
     ${mdPath.includes('glossary.md') ? '<link rel="stylesheet" href="/css/glossary.css">' : ''}
@@ -331,6 +338,13 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${region}のAll-on-4対応医院｜All-on-4情報サイト</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/images/favicon-16x16.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/images/favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+    
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/luxury-style.css">
 </head>
@@ -404,6 +418,13 @@ const mainHospitalsHtml = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="全国のAll-on-4対応医院を地域別に掲載。東京、大阪、名古屋、福岡など主要都市のクリニック一覧。">
     <title>病院検索｜All-on-4対応医院一覧</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/images/favicon-16x16.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/images/favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+    
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/luxury-style.css">
 </head>
