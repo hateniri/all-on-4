@@ -408,3 +408,66 @@ picture img {
         grid-template-columns: 1fr;
     }
 }
+
+/* Procedure Animation Section */
+.procedure-animation-section {
+    padding: 4rem 0;
+    background: #f8f8f8;
+}
+
+.procedure-animation-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.procedure-animation-section .section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.procedure-video-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.procedure-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-description {
+    padding: 2rem;
+}
+
+.video-description h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.video-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-description li {
+    padding: 0.5rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.video-description li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+EOF < /dev/null

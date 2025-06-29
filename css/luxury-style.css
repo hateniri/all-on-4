@@ -30,6 +30,82 @@
     box-sizing: border-box;
 }
 
+/* Procedure Animation Section */
+.procedure-animation-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--pearl) 0%, var(--ivory) 100%);
+}
+
+.procedure-animation-section .section-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+    font-family: var(--font-serif);
+    font-weight: 600;
+}
+
+.procedure-animation-section .section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.procedure-video-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.procedure-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-description {
+    padding: 3rem;
+    background: white;
+}
+
+.video-description h3 {
+    color: var(--dark-gold);
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-family: var(--font-serif);
+}
+
+.video-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-description li {
+    padding: 1rem 0;
+    padding-left: 3rem;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: var(--text-primary);
+}
+
+.video-description li:last-child {
+    border-bottom: none;
+}
+
+.video-description li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
 /* Columns Page Specific Styles */
 .columns-hero {
     background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
