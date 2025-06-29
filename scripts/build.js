@@ -45,7 +45,7 @@ if (fs.existsSync(sitemapPath)) {
 }
 
 // Copy section index.html files (excluding hospitals which will be generated)
-const sectionDirs = ['columns', 'faq', 'contact'];
+const sectionDirs = ['columns', 'faq', 'contact', 'care-goods'];
 sectionDirs.forEach(dir => {
     const indexPath = path.join(__dirname, '..', dir, 'index.html');
     const destPath = path.join(distDir, dir, 'index.html');
@@ -439,6 +439,7 @@ const mainHospitalsHtml = `<!DOCTYPE html>
                     <li><a href="/hospitals/" class="active">病院検索</a></li>
                     <li><a href="/glossary/">用語集</a></li>
                     <li><a href="/faq/">よくある質問</a></li>
+                    <li><a href="/care-goods/">ケアグッズ</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
             </div>
