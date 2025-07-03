@@ -111,6 +111,11 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
         <nav class="navbar">
             <div class="container">
                 <h1 class="logo"><a href="/">All-on-4 INFO</a></h1>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-menu">
                     <li><a href="/">ホーム</a></li>
                     <li><a href="/columns/">コラム</a></li>
@@ -202,6 +207,7 @@ function generateHtmlFromMarkdown(mdPath, outputPath) {
         </div>
     </footer>
     <script src="/js/main.js"></script>
+    <script src="/js/mobile-menu.js"></script>
     <script src="/js/placeholder-images.js"></script>
     <script src="/js/ads.js"></script>
 </body>
@@ -353,6 +359,11 @@ Object.entries(hospitalsByRegion).forEach(([region, hospitals]) => {
         <nav class="navbar">
             <div class="container">
                 <h1 class="logo"><a href="/">All-on-4 INFO</a></h1>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-menu">
                     <li><a href="/">ホーム</a></li>
                     <li><a href="/columns/">コラム</a></li>
@@ -433,6 +444,11 @@ const mainHospitalsHtml = `<!DOCTYPE html>
         <nav class="navbar">
             <div class="container">
                 <h1 class="logo"><a href="/">All-on-4 INFO</a></h1>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-menu">
                     <li><a href="/">ホーム</a></li>
                     <li><a href="/columns/">コラム</a></li>
